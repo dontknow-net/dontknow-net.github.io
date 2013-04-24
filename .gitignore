@@ -1,1 +1,4 @@
 _site/
+*sublime*
+.DS_Store
+.idea
