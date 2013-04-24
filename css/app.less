@@ -15,6 +15,7 @@
 
 // Wells
 .well{
+  border-color: @grayLighter;
   background-color:@white;
 }
 
@@ -255,6 +256,38 @@
   }
 }
 
+// Page
+.page-title{
+  margin-top: 0;
+}
+
+// Duracion
+.course-duration{
+  margin: 0 0 10px 0;
+  font:400 14px/16px @sansFontFamily;
+  text-transform: uppercase;
+  text-align: center;
+  .clearfix();
+  .circle{
+    width: 100px;
+    height: 100px;
+    margin: 0 15px 0 0; 
+    display: table;
+    float: left;
+    .cell{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      color:lighten(@linkColor, 30%);
+      .border-radius(50px);
+      border:5px solid lighten(@linkColor, 30%);
+      .numero{
+        display: block;
+        font: 400 30px/30px @handFontFamily;
+      }
+    }
+  }
+}
 // Timeline
 .timeline{
   margin-bottom: 40px;
@@ -268,7 +301,6 @@
   }
   .well{
     margin-bottom: 0;
-    border-color: lighten(@grayLight, 20%);
     background-color: @whiteDarker; 
   }
   .date{
@@ -301,6 +333,10 @@
 }
 
 #info-course-online{
+  .title{
+    margin-top: 20px;
+    font:400 26px/30px @handFontFamily;
+  }
   ul{
     margin: 0 0 20px 0;
     list-style-type: none;
@@ -317,4 +353,29 @@
       }
     }  
   }  
+}
+
+// Profesores
+.teacher{
+  .description{
+    padding-top: 5px;
+  }
+  &.teacher-small{
+    margin-bottom: 15px;
+    border-bottom: 1px solid @grayLighter;
+    &:last-child{
+      border-bottom:none;
+    }
+  }
+}
+
+// Acciones
+.box-actions{
+  margin:20px 0 20px -31px;
+  padding:20px 0 20px 30px;
+  background: saturate(#E8EFE0, 25%);
+  border:1px solid @grayLighter;
+  .prices{
+    margin-bottom: 15px;
+  }
 }

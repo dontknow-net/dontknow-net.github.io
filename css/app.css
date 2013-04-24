@@ -117,6 +117,7 @@
   text-decoration: none;
 }
 .well {
+  border-color: #dddddd;
   background-color: #ffffff;
 }
 .thumbnail {
@@ -225,7 +226,7 @@
 }
 #primary-content .well .title {
   font: 700 40px/42px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #eeeeee;
+  color: #dddddd;
 }
 #primary-content .well .firma {
   margin-right: -26px;
@@ -381,6 +382,46 @@
   width: 174px;
   height: 55px;
 }
+.page-title {
+  margin-top: 0;
+}
+.course-duration {
+  margin: 0 0 10px 0;
+  font: 400 14px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  *zoom: 1;
+}
+.course-duration:before,
+.course-duration:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.course-duration:after {
+  clear: both;
+}
+.course-duration .circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 15px 0 0;
+  display: table;
+  float: left;
+}
+.course-duration .circle .cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #63aed8;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 5px solid #63aed8;
+}
+.course-duration .circle .cell .numero {
+  display: block;
+  font: 400 30px/30px 'Shadows Into Light Two', cursive;
+}
 .timeline {
   margin-bottom: 40px;
 }
@@ -395,7 +436,6 @@
 }
 .timeline .well {
   margin-bottom: 0;
-  border-color: #cccccc;
   background-color: #f0f0f0;
 }
 .timeline .date {
@@ -425,6 +465,10 @@
   margin: 0 0 10px 0;
   font: 400 20px/26px 'Shadows Into Light Two', cursive;
 }
+#info-course-online .title {
+  margin-top: 20px;
+  font: 400 26px/30px 'Shadows Into Light Two', cursive;
+}
 #info-course-online ul {
   margin: 0 0 20px 0;
   list-style-type: none;
@@ -449,4 +493,23 @@
 }
 #info-course-online ul li:nth-child(even) {
   float: right;
+}
+.teacher .description {
+  padding-top: 5px;
+}
+.teacher.teacher-small {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dddddd;
+}
+.teacher.teacher-small:last-child {
+  border-bottom: none;
+}
+.box-actions {
+  margin: 20px 0 20px -31px;
+  padding: 20px 0 20px 30px;
+  background: #e8f5da;
+  border: 1px solid #dddddd;
+}
+.box-actions .prices {
+  margin-bottom: 15px;
 }
