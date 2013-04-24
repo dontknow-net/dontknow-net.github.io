@@ -1,0 +1,320 @@
+@import "variables.less";
+@import "mixins.less";
+@import "sprites-mixins";
+@import "firma.less";
+@import "ambitos.less";
+
+// Block links
+.block-link{
+  display: block;
+  color:@gray;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+// Wells
+.well{
+  background-color:@white;
+}
+
+// Thumbnails
+.thumbnail{
+  background-color:@white;
+}
+
+// Stickers
+.sticker{
+  width: 100px;
+  height: 100px;
+  display: table;
+  position: absolute;
+  top:10px;
+  left: -20px;
+  font:400 24px/32px @handFontFamily;
+  letter-spacing: 1px;
+  text-align: center;
+  color: @white;
+  background-color: @linkColor;
+  .border-radius(50px);
+  .rotate(-10deg);
+  .opacity(97);
+  .cell{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+// Price
+.price{
+  margin: 0 5px 0 0;
+  padding: 10px 15px;
+  display: inline-block;
+  #gradient > .vertical(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
+  font:700 24px/32px @sansFontFamily;
+  color: @white;
+  text-shadow: -1px -1px rgba(0,0,0,0.3);
+  .border-radius(3px);
+}
+.price-free{
+  font:400 24px/32px @handFontFamily;
+  color: @gray;
+}
+
+.mostrar-mas{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+// Contenido principal
+#primary-content{
+  #gradient > .vertical(#333, #303030);
+  .box-shadow(1px 0px 20px 1px @gray);
+  // Cabecera
+  #header{
+    padding: 7px 0 0 0;
+    .title{
+      margin: 0 0 5px 0;
+      color: @grayLight;
+      font:700 36px/38px @sansFontFamily;
+      .spriteReplace (sprite1, 0, 0, 174px, 55px);
+    }
+    .subtitle{
+      margin:7px 0 10px 0;
+      font:400 24px/32px @handFontFamily;
+      text-align: right;
+      letter-spacing: 1px;
+      color: lighten(@grayLight, 15%);
+    }
+  }
+  .well{
+    margin-bottom: 35px;
+    background-color: desaturate(@linkColor, 55%);
+    border-color: desaturate(@linkColor, 55%);
+    position: relative;
+    .img-polaroid{
+      border:1px solid @white;
+    }
+    .lista-ambitos{
+      .type{
+        color:@white;
+      }
+    }
+    .title{
+      font:700 40px/42px @sansFontFamily;
+      color: @grayLighter;
+    }
+    .firma{
+      margin-right: -26px;
+      background-color: darken(@whiteDarker, 20%);
+      .box-shadow(-1px 1px 2px 1px #444);
+      .user-picture{
+        border-color: darken(@whiteDarker, 20%);
+      }
+      &:after{
+        position:absolute;
+        right:0;
+        top:60px;
+        border-bottom:4px solid transparent;
+        border-right:3px solid transparent;
+        border-top:3px solid darken(@whiteDarker, 50%);
+        border-left:3px solid darken(@whiteDarker, 50%);
+        content:"";     
+      }
+    }
+    .lead{
+      color: lighten(@grayLight, 10%);
+    }
+    .price-free{
+      color: @white;
+    }
+    &:hover{
+      background-color: desaturate(@linkColor, 25%);
+      border-color: desaturate(@linkColor, 25%);
+      .transition(all .5s ease);
+      .img-polaroid{
+        border:1px solid lighten(@grayLight, 25%);
+      }
+      .lead{
+        color: lighten(@grayLight, 20%);
+        .transition(all .5s ease);
+      }
+      .sticker{
+        background-color: @linkColorHover;
+        .transition(all .5s ease);
+      }    
+    }
+  }
+  // Cabecera paginas interiores
+  &.inner{
+    margin-bottom: 20px;
+    #header{
+      .subtitle{
+        text-align: left;
+      }
+    }
+  }
+}
+
+// Titulos de seccion
+.header-section{
+  width: 200px;
+  margin: -10px auto 20px auto;
+  padding:5px 0 7px 0;
+  position: relative;
+  font:700 16px/18px @sansFontFamily;
+  text-align: center;
+  text-transform: uppercase;
+  background: @linkColor;
+  color:@white;
+  .border-radius(4px);
+  &:after{
+    position:absolute;
+    left: 92px;
+    right:auto;
+    top:auto;
+    bottom:-12px;
+    border-top:6px solid @linkColor;
+    border-bottom:6px solid transparent;
+    border-right:6px solid transparent;
+    border-left:6px solid transparent;
+    content:"";     
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
+
+// Thumbnails clickables
+.block-link{
+  &:hover{
+    .thumbnail{
+      border-color: lighten(@grayLight, 10%);
+      .box-shadow(1px 1px 7px 0px #bbb);
+      .photo{
+        img{
+          .transition(all 1s ease);
+          .opacity(50);
+        }
+      }
+    }
+  }
+}
+
+// Thumbnails 
+.thumbnails{
+  li:nth-child(3n+1){
+    clear:both;
+  }
+  .thumbnail{
+    position: relative;
+    .photo{
+      background: @black;
+    }
+    .title{
+      margin-bottom: 15px;
+      font:700 20px/22px @sansFontFamily;
+    }
+    .price{
+      margin:0;
+      position: absolute;
+      top:70px;
+      right: 4px;
+      .border-radius(4px 0 0 4px);
+    }
+    .actions{
+      .pull-right{
+        display: none;
+        padding-top: 3px;
+      }
+    }
+  }
+}
+
+// Footer
+#footer{
+  padding:20px 0; 
+  border-top: 10px solid @gray;
+  background-color: @grayDark;
+  color: @grayLight;
+  #copy{
+    padding-top: 5px;
+    font:400 13px/15px @sansFontFamily;
+    color: @grayLight;
+    .logo{
+      display: block;
+      .spriteReplace (sprite1, 0, 0, 174px, 55px);  
+    } 
+  }
+}
+
+// Timeline
+.timeline{
+  margin-bottom: 40px;
+  .row-fluid{
+    margin-bottom: 20px;
+    .spriteHelper(sprite1, 1, 1, 0, 0);
+    background-position: 129px bottom;
+    &:last-child{
+      background: none;
+    }
+  }
+  .well{
+    margin-bottom: 0;
+    border-color: lighten(@grayLight, 20%);
+    background-color: @whiteDarker; 
+  }
+  .date{
+    padding-top: 5px;
+    border-top: 1px solid @grayLight;
+    text-transform: uppercase;
+    text-align: right;
+  }
+  .number{
+    display: table;    
+    .cell{
+      width: 34px;
+      height: 34px;
+      //min-height: 24px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font:400 24px/24px @handFontFamily;
+      color: lighten(@linkColor, 30%);
+      border:5px solid lighten(@linkColor, 30%);
+      background-color: @white;
+      .border-radius(22px);
+      //.box-shadow(1px 1px 2px 1px lighten(@gray, 10%) inset);
+    }
+  }
+  .title{
+    margin: 0 0 10px 0; 
+    font:400 20px/26px @handFontFamily;
+  }
+}
+
+#info-course-online{
+  ul{
+    margin: 0 0 20px 0;
+    list-style-type: none;
+    .clearfix();
+    li{
+      margin-bottom: 10px;
+      width: 48%;      
+      &:nth-child(odd){
+        float:left;
+        clear:both;
+      }
+      &:nth-child(even){
+        float:right;
+      }
+    }  
+  }  
+}

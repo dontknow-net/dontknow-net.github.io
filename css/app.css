@@ -1,0 +1,532 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hideText {
+  text-indent: -999em;
+  letter-spacing: -999em;
+  overflow: hidden;
+}
+.firma {
+  min-height: 58px;
+  padding: 2px 10px 0 65px;
+  position: relative;
+  font: 400 13px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555555;
+  background: #f0f0f0;
+}
+.firma .user-picture {
+  width: 50px;
+  min-width: 50px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #f0f0f0;
+}
+.firma .teacher {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.firma .name {
+  display: block;
+  font-weight: bold;
+}
+#firma,
+.firma-comentarios {
+  margin-bottom: 15px;
+  padding: 2px 12px 5px 65px;
+}
+#firma .user-picture,
+.firma-comentarios .user-picture {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#firma .datos-avatar,
+.firma-comentarios .datos-avatar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#firma .datos-avatar li,
+.firma-comentarios .datos-avatar li {
+  margin-bottom: 0;
+  font: 400 13px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#firma .datos-avatar li.nombre a,
+.firma-comentarios .datos-avatar li.nombre a {
+  font-weight: bold;
+}
+#firma .enviar-mensaje,
+.firma-comentarios .enviar-mensaje {
+  margin-top: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+#firma div.seguir,
+.firma-comentarios div.seguir {
+  margin-bottom: 0;
+  position: absolute;
+  top: 5px;
+  right: 35px;
+  text-align: right;
+}
+#firma div.seguir a.button,
+.firma-comentarios div.seguir a.button {
+  margin: 0 0 3px 0;
+  padding: 5px 13px 7px;
+}
+#firma div.seguir span.seguidores,
+.firma-comentarios div.seguir span.seguidores {
+  display: block;
+}
+.firma > a {
+  padding: 2px 5px 5px 65px;
+  color: #555555;
+  text-decoration: none;
+}
+.firma > a > img {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #f0f0f0;
+}
+.firma span {
+  display: block;
+  font: 400 13px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.firma span.usuario,
+.firma span.experto {
+  font-weight: bold;
+}
+.firma.firma-small > a {
+  min-height: 35px;
+  padding: 0 0 0 40px;
+  color: #555555;
+  background: none;
+}
+.firma.firma-small > a > img {
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+.destacado .firma a {
+  padding: 5px 20px 5px 65px;
+}
+.destacado .firma a:after {
+  background: url("../img/sprite1.png") no-repeat;
+  background-position: -64px 0px;
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  right: 0;
+  top: 0;
+}
+.lista-ambitos {
+  *zoom: 1;
+}
+.lista-ambitos:before,
+.lista-ambitos:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.lista-ambitos:after {
+  clear: both;
+}
+.lista-ambitos .type {
+  margin: 0 1px 1px 0;
+  padding: 3px 10px 3px 0;
+  font-size: 11px;
+  line-height: 15px;
+  display: block;
+  float: left;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.lista-ambitos .ambito {
+  display: none;
+  margin: 0 1px 1px 0;
+  padding: 3px 10px;
+  font-size: 11px;
+  line-height: 15px;
+  float: left;
+  text-transform: uppercase;
+  background: #f0f0f0;
+}
+@media (max-width: 767px) {
+  .lista-ambitos .ambito {
+    width: auto;
+    margin: 0 5px 5px 0;
+    float: none;
+  }
+}
+.block-link {
+  display: block;
+  color: #555555;
+}
+.block-link:hover {
+  text-decoration: none;
+}
+.well {
+  background-color: #ffffff;
+}
+.thumbnail {
+  background-color: #ffffff;
+}
+.sticker {
+  width: 100px;
+  height: 100px;
+  display: table;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  font: 400 24px/32px 'Shadows Into Light Two', cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #205f82;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+.sticker .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.price {
+  margin: 0 5px 0 0;
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  font: 700 24px/32px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.price-free {
+  font: 400 24px/32px 'Shadows Into Light Two', cursive;
+  color: #555555;
+}
+.mostrar-mas {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#primary-content {
+  background-color: #323232;
+  background-image: -moz-linear-gradient(top, #333333, #303030);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#303030));
+  background-image: -webkit-linear-gradient(top, #333333, #303030);
+  background-image: -o-linear-gradient(top, #333333, #303030);
+  background-image: linear-gradient(to bottom, #333333, #303030);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff333333', endColorstr='#ff303030', GradientType=0);
+  -webkit-box-shadow: 1px 0px 20px 1px #555555;
+  -moz-box-shadow: 1px 0px 20px 1px #555555;
+  box-shadow: 1px 0px 20px 1px #555555;
+}
+#primary-content #header {
+  padding: 7px 0 0 0;
+}
+#primary-content #header .title {
+  margin: 0 0 5px 0;
+  color: #999999;
+  font: 700 36px/38px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url("../img/sprite1.png") no-repeat;
+  background-position: 0px 0px;
+  text-indent: -999em;
+  letter-spacing: -999em;
+  overflow: hidden;
+  width: 174px;
+  height: 55px;
+}
+#primary-content #header .subtitle {
+  margin: 7px 0 10px 0;
+  font: 400 24px/32px 'Shadows Into Light Two', cursive;
+  text-align: right;
+  letter-spacing: 1px;
+  color: #bfbfbf;
+}
+#primary-content .well {
+  margin-bottom: 35px;
+  background-color: #4d5255;
+  border-color: #4d5255;
+  position: relative;
+}
+#primary-content .well .img-polaroid {
+  border: 1px solid #ffffff;
+}
+#primary-content .well .lista-ambitos .type {
+  color: #ffffff;
+}
+#primary-content .well .title {
+  font: 700 40px/42px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #eeeeee;
+}
+#primary-content .well .firma {
+  margin-right: -26px;
+  background-color: #bdbdbd;
+  -webkit-box-shadow: -1px 1px 2px 1px #444444;
+  -moz-box-shadow: -1px 1px 2px 1px #444444;
+  box-shadow: -1px 1px 2px 1px #444444;
+}
+#primary-content .well .firma .user-picture {
+  border-color: #bdbdbd;
+}
+#primary-content .well .firma:after {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  border-bottom: 4px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #717171;
+  border-left: 3px solid #717171;
+  content: "";
+}
+#primary-content .well .lead {
+  color: #b3b3b3;
+}
+#primary-content .well .price-free {
+  color: #ffffff;
+}
+#primary-content .well:hover {
+  background-color: #34596e;
+  border-color: #34596e;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#primary-content .well:hover .img-polaroid {
+  border: 1px solid #d9d9d9;
+}
+#primary-content .well:hover .lead {
+  color: #cccccc;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#primary-content .well:hover .sticker {
+  background-color: #2f8cbf;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#primary-content.inner {
+  margin-bottom: 20px;
+}
+#primary-content.inner #header .subtitle {
+  text-align: left;
+}
+.header-section {
+  width: 200px;
+  margin: -10px auto 20px auto;
+  padding: 5px 0 7px 0;
+  position: relative;
+  font: 700 16px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  background: #205f82;
+  color: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.header-section:after {
+  position: absolute;
+  left: 92px;
+  right: auto;
+  top: auto;
+  bottom: -12px;
+  border-top: 6px solid #205f82;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+}
+.header-section h1,
+.header-section h2,
+.header-section h3,
+.header-section h4,
+.header-section h5,
+.header-section h6 {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+.block-link:hover .thumbnail {
+  border-color: #b3b3b3;
+  -webkit-box-shadow: 1px 1px 7px 0px #bbbbbb;
+  -moz-box-shadow: 1px 1px 7px 0px #bbbbbb;
+  box-shadow: 1px 1px 7px 0px #bbbbbb;
+}
+.block-link:hover .thumbnail .photo img {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.thumbnails li:nth-child(3n+1) {
+  clear: both;
+}
+.thumbnails .thumbnail {
+  position: relative;
+}
+.thumbnails .thumbnail .photo {
+  background: #000000;
+}
+.thumbnails .thumbnail .title {
+  margin-bottom: 15px;
+  font: 700 20px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.thumbnails .thumbnail .price {
+  margin: 0;
+  position: absolute;
+  top: 70px;
+  right: 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.thumbnails .thumbnail .actions .pull-right {
+  display: none;
+  padding-top: 3px;
+}
+#footer {
+  padding: 20px 0;
+  border-top: 10px solid #555555;
+  background-color: #333333;
+  color: #999999;
+}
+#footer #copy {
+  padding-top: 5px;
+  font: 400 13px/15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #999999;
+}
+#footer #copy .logo {
+  display: block;
+  background: url("../img/sprite1.png") no-repeat;
+  background-position: 0px 0px;
+  text-indent: -999em;
+  letter-spacing: -999em;
+  overflow: hidden;
+  width: 174px;
+  height: 55px;
+}
+.timeline {
+  margin-bottom: 40px;
+}
+.timeline .row-fluid {
+  margin-bottom: 20px;
+  background: url("../img/sprite1.png") no-repeat;
+  background-position: 0 0;
+  background-position: 129px bottom;
+}
+.timeline .row-fluid:last-child {
+  background: none;
+}
+.timeline .well {
+  margin-bottom: 0;
+  border-color: #cccccc;
+  background-color: #f0f0f0;
+}
+.timeline .date {
+  padding-top: 5px;
+  border-top: 1px solid #999999;
+  text-transform: uppercase;
+  text-align: right;
+}
+.timeline .number {
+  display: table;
+}
+.timeline .number .cell {
+  width: 34px;
+  height: 34px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font: 400 24px/24px 'Shadows Into Light Two', cursive;
+  color: #63aed8;
+  border: 5px solid #63aed8;
+  background-color: #ffffff;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  border-radius: 22px;
+}
+.timeline .title {
+  margin: 0 0 10px 0;
+  font: 400 20px/26px 'Shadows Into Light Two', cursive;
+}
+#info-course-online ul {
+  margin: 0 0 20px 0;
+  list-style-type: none;
+  *zoom: 1;
+}
+#info-course-online ul:before,
+#info-course-online ul:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#info-course-online ul:after {
+  clear: both;
+}
+#info-course-online ul li {
+  margin-bottom: 10px;
+  width: 48%;
+}
+#info-course-online ul li:nth-child(odd) {
+  float: left;
+  clear: both;
+}
+#info-course-online ul li:nth-child(even) {
+  float: right;
+}

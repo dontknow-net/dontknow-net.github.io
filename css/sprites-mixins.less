@@ -1,0 +1,65 @@
+//
+// Sprites mixins
+// --------------------------------------------------
+
+
+// Sprites
+.spriteHelper(@image, @x, @y, @spriteX, @spriteY) {
+   background: url("../img/@{image}.png") no-repeat;
+   background-position: -(@x*@spriteX) -(@y*@spriteY);
+}
+.sprite(@image, @x, @y) when (@image = sprite1){
+   @spriteX: 32px;
+   @spriteY: 32px;
+   .spriteHelper(@image, @x, @y, @spriteX, @spriteY);
+}
+.sprite(@image, @x, @y) when (@image = sprite2){
+   @spriteX: 128px;
+   @spriteY: 74px;
+   .spriteHelper(@image, @x, @y, @spriteX, @spriteY);
+}
+
+// Sprite: Replace text
+.hideText{
+   text-indent: -999em;
+   letter-spacing: -999em;
+   overflow: hidden;
+}
+.spriteReplace(@image, @x, @y) {
+   .sprite(@image, @x, @y);
+   .hideText;
+}
+.spriteReplace (@image, @x, @y, @width, @height) {
+   .sprite(@image, @x, @y);
+   .hideText;
+   width: @width;
+   height: @height;
+}
+
+// Sprite: Inline images
+.spriteInline(@image, @x, @y) {
+   .sprite(@image, @x, @y);
+   display: inline-block;
+   content: "";
+}
+.spriteInline(@image, @x, @y, @width, @height) {
+   .sprite(@image, @x, @y);
+   display: inline-block;
+   content: "";
+   width: @width;
+   height: @height;
+}
+
+// Sprite: Padded images
+.spritePadded(@image, @x, @y) {
+   .sprite(@image, @x, @y);
+   position: absolute;
+   content: "";
+}
+.spritePadded(@image, @x, @y, @width, @height) {
+   .sprite(@image, @x, @y);
+   position: absolute;
+   content: "";
+   width: @width;
+   height: @height;
+}

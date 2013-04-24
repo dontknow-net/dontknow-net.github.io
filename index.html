@@ -1,50 +1,291 @@
 ---
 layout: layout
-title: Esta es la HomePage
+title: 
 ---
-
-<ul>
-  {% for post in site.categories.new %}
-  <li>
-    <a href="{{ post.url }}">
-      <p><strong>imagen: </strong>{{post.imagen}}</p>
-      {{ post.title }}
-      <p><strong>fechas: </strong>{{post.fechas}}</p>
-      <p><strong>precio: </strong>{{post.precio}}</p>
-      <p><strong>entradilla: </strong>{{ post.entradilla | newline_to_br }}</p>
+<section id="primary-content">
+  <div class="container">
+    <header id="header">
+      <div class="row">
+        <div class="span3">
+          <h1 class="title hideText">Dontknow School of Life</h1>
+        </div>
+        <hgroup>
+          <div class="span9">
+            <h2 class="subtitle">Itinerarios formativos que mejoran tu vida</h2>
+          </div>
+        </hgroup>
+      </div>
+    </header>
+    <!--ToDo: revisar si no necesita un section-->
+    <a href="landing-curso.html" class="block-link">
+      <section class="course well">
+        <div class="row-fluid">
+          <div class="span4">
+            <div class="photo">
+              <img src="http://lorempixel.com/output/people-q-c-350-200-7.jpg" class="img-polaroid">
+            </div>
+          </div>
+          <div class="span8">
+            <div class="row-fluid">
+              <div class="span8">
+                <ul class="lista-ambitos inline">
+                  <li class="type">Mejorar la sociedad</li>
+                  <li class="ambito">Medio ambiente</li>
+                  <li class="ambito">Salud</li>
+                </ul>
+                <!--ToDo: revisar con Su si metemos aqui un h1 para SEO-->
+                <h2 class="title">Nacionalismo</h2>
+              </div>
+              <div class="span4">
+                <div class="firma">
+                  <div class="user-picture">
+                    <img src="http://lorempixel.com/50/50/people/">  
+                  </div>
+                  <span class="teacher">Profesor titular</span>
+                  <span class="name">Juan Palomo</span>
+                  Catedrático en Ciencias Políticas y Sociales
+                </div>
+              </div>
+            </div>
+            <p class="lead">Tendrás una opinión más fundamentada sobre el nacionalismo que te permitirá dialogar y decidir tu postura de manera más consciente y racional</p>
+            <span class="price">30€</span>
+            <span class="price-free">Gratis a los 100 primeros</span>
+            <span class="sticker">
+              <span class="cell">Nuevo</span>
+            </span>
+          </div>
+        </div>
+      </section>
     </a>
-  </li>
-  {% endfor %}
-</ul>
+  </div>
+</section>
 
-<h2>EN PROCESO</h2>
-<ul>
-  {% for post in site.categories.proceso %}
-  <li>
-    <a href="{{ post.url }}">
-      <p><strong>imagen: </strong>{{post.imagen}}</p>
-      {{ post.title }}
-      <p><strong>fechas: </strong>{{post.fechas}}</p>
-      <p><strong>precio: </strong>{{post.precio}}</p>
-      <p><strong>entradilla: </strong>{{ post.entradilla | newline_to_br }}</p>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+<div class="container">
+  <section id="courses-in-progress">
+    <header class="header-section">En proceso</header>
+    <ul class="thumbnails">
+      <li class="span4">
+        <a href="" class="block-link">
+          <div class="thumbnail">
+            <div class="photo">
+              <img src="http://lorempixel.com/output/nature-q-c-360-200-4.jpg">
+            </div>
+            <div class="caption">
+              <ul class="lista-ambitos inline">
+                <li class="type">Desarrollo personal</li>
+                <li class="ambito">Medio ambiente</li>
+                <li class="ambito">Salud</li>
+              </ul>
+              <h2 class="title">Cuidar tu salud a la vez que el medio ambiente</h2>
+              <div class="firma">
+                <div class="user-picture">
+                  <img src="http://lorempixel.com/50/50/people/">  
+                </div>
+                <span class="teacher">Profesor titular</span>
+                <span class="name">Juan Palomo</span>
+                Catedrático en Ciencias Políticas y Sociales
+              </div>
+              <span class="price">30€</span>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="span4">
+        <a href="" class="block-link">
+          <div class="thumbnail">
+            <div class="photo">
+              <img src="http://lorempixel.com/output/people-q-c-360-200-1.jpg">
+            </div>
+            <div class="caption">
+              <ul class="lista-ambitos inline">
+                <li class="type">Desarrollo personal</li>
+                <li class="ambito">Medio ambiente</li>
+                <li class="ambito">Salud</li>
+              </ul>
+              <h2 class="title">Revisar tus creencias</h2>
+              <div class="firma">
+                <div class="user-picture">
+                  <img src="http://lorempixel.com/50/50/people/">  
+                </div>
+                <span class="teacher">Profesor titular</span>
+                <span class="name">Juan Palomo</span>
+                Catedrático en Ciencias Políticas y Sociales
+              </div>
+              <span class="price">30€</span>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="span4">
+        <a href="" class="block-link">
+          <div class="thumbnail">
+            <div class="photo">
+              <img src="http://lorempixel.com/output/abstract-q-c-360-200-3.jpg">
+            </div>
+            <div class="caption">
+              <ul class="lista-ambitos inline">
+                <li class="type">Desarrollo personal</li>
+                <li class="ambito">Medio ambiente</li>
+                <li class="ambito">Salud</li>
+              </ul>
+              <h2 class="title">Ser más creativo en la vida y el trabajo</h2>
+              <div class="firma">
+                <div class="user-picture">
+                  <img src="http://lorempixel.com/50/50/people/">  
+                </div>
+                <span class="teacher">Profesor titular</span>
+                <span class="name">Juan Palomo</span>
+                Catedrático en Ciencias Políticas y Sociales
+              </div>
+              <span class="price">30€</span>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section id="courses-future">
+    <header class="header-section">Futuros cursos</header>
+    <ul class="thumbnails">
+      <li class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <ul class="lista-ambitos inline">
+              <li class="type">Desarrollo personal</li>
+              <li class="ambito">Familia</li>
+              <li class="ambito">Salud</li>
+            </ul>
+            <h2 class="title">Tecnología e hijos: aprende a gestionarlo</h2>
+            <div class="actions">
+              <a class="btn btn-primary" href="#">Quiero este curso</a> <a href="#" class="pull-right">colaborar como profesor</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <ul class="lista-ambitos inline">
+              <li class="type">Desarrollo profesional</li>
+              <li class="ambito">Medio ambiente</li>
+              <li class="ambito">Salud</li>
+            </ul>
+            <h2 class="title">Reinventa tu profesión de arquitecto</h2>
+            <div class="actions">
+              <a class="btn btn-primary" href="#">Quiero este curso</a> <a href="#" class="pull-right">colaborar como profesor</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <ul class="lista-ambitos inline">
+              <li class="type">Desarrollo personal</li>
+              <li class="ambito">Medio ambiente</li>
+              <li class="ambito">Salud</li>
+            </ul>
+            <h2 class="title">Mejorar la convivencia en casa</h2>
+            <div class="actions">
+              <a class="btn btn-primary" href="#">Quiero este curso</a> <a href="#" class="pull-right">colaborar como profesor</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <ul class="lista-ambitos inline">
+              <li class="type">Desarrollo profesional</li>
+              <li class="ambito">Medio ambiente</li>
+              <li class="ambito">Salud</li>
+            </ul>
+            <h2 class="title">¿Estás desempleado? Conviértelo en nuevas oportunidades</h2>
+            <div class="actions">
+              <a class="btn btn-primary" href="#">Quiero este curso</a> <a href="#" class="pull-right">colaborar como profesor</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <ul class="lista-ambitos inline">
+              <li class="type">Desarrollo personal</li>
+              <li class="ambito">Medio ambiente</li>
+              <li class="ambito">Salud</li>
+            </ul>
+            <h2 class="title">Deporte e hijos: aprende a gestionarlo</h2>
+            <div class="actions">
+              <a class="btn btn-primary" href="#">Quiero este curso</a> <a href="#" class="pull-right">colaborar como profesor</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <ul class="lista-ambitos inline">
+              <li class="type">Desarrollo personal</li>
+              <li class="ambito">Medio ambiente</li>
+              <li class="ambito">Salud</li>
+            </ul>
+            <h2 class="title">Mejora la comunicación con tu hijo adolescente</h2>
+            <div class="actions">
+              <a class="btn btn-primary" href="#">Quiero este curso</a> <a href="#" class="pull-right">colaborar como profesor</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <ul class="lista-ambitos inline">
+              <li class="type">Desarrollo personal</li>
+              <li class="ambito">Medio ambiente</li>
+              <li class="ambito">Salud</li>
+            </ul>
+            <h2 class="title">Herramientas para elegir una profesión</h2>
+            <div class="actions">
+              <a class="btn btn-primary" href="#">Quiero este curso</a> <a href="#" class="pull-right">colaborar como profesor</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <ul class="lista-ambitos inline">
+              <li class="type">Desarrollo personal</li>
+              <li class="ambito">Medio ambiente</li>
+              <li class="ambito">Salud</li>
+            </ul>
+            <h2 class="title">Convivir con el mal</h2>
+            <div class="actions">
+              <a class="btn btn-primary" href="#">Quiero este curso</a> <a href="#" class="pull-right">colaborar como profesor</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <div class="caption">
+            <ul class="lista-ambitos inline">
+              <li class="type">Mejorar la sociedad</li>
+              <li class="ambito">Medio ambiente</li>
+              <li class="ambito">Salud</li>
+            </ul>
+            <h2 class="title">Estado de Bienestar. Tu aportación para conseguirlo.</h2>
+            <div class="actions">
+              <a class="btn btn-primary" href="#">Quiero este curso</a> <a href="#" class="pull-right">colaborar como profesor</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
 
-
-<h2>FUTUROS CURSOS</h2>
-<ul>
-  {% for post in site.categories.futuros %}
-  <li>
-    <a href="{{ post.url }}">
-      <p><strong>imagen: </strong>{{post.imagen}}</p>
-      {{ post.title }}
-      <p><strong>fechas: </strong>{{post.fechas}}</p>
-      <p><strong>precio: </strong>{{post.precio}}</p>
-      <p><strong>entradilla: </strong>{{ post.entradilla | newline_to_br }}</p>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
-
+    <div class="mostrar-mas">
+      <a href="" class="btn btn-small">Mostrar más</a>
+    </div>
+  </section>
+</div>

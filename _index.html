@@ -1,0 +1,50 @@
+---
+layout: layout
+title: Esta es la HomePage
+---
+
+<ul>
+  {% for post in site.categories.new %}
+  <li>
+    <a href="{{ post.url }}">
+      <p><strong>imagen: </strong>{{post.imagen}}</p>
+      {{ post.title }}
+      <p><strong>fechas: </strong>{{post.fechas}}</p>
+      <p><strong>precio: </strong>{{post.precio}}</p>
+      <p><strong>entradilla: </strong>{{ post.entradilla | newline_to_br }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>EN PROCESO</h2>
+<ul>
+  {% for post in site.categories.proceso %}
+  <li>
+    <a href="{{ post.url }}">
+      <p><strong>imagen: </strong>{{post.imagen}}</p>
+      {{ post.title }}
+      <p><strong>fechas: </strong>{{post.fechas}}</p>
+      <p><strong>precio: </strong>{{post.precio}}</p>
+      <p><strong>entradilla: </strong>{{ post.entradilla | newline_to_br }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+
+<h2>FUTUROS CURSOS</h2>
+<ul>
+  {% for post in site.categories.futuros %}
+  <li>
+    <a href="{{ post.url }}">
+      <p><strong>imagen: </strong>{{post.imagen}}</p>
+      {{ post.title }}
+      <p><strong>fechas: </strong>{{post.fechas}}</p>
+      <p><strong>precio: </strong>{{post.precio}}</p>
+      <p><strong>entradilla: </strong>{{ post.entradilla | newline_to_br }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
