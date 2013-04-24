@@ -55,100 +55,20 @@
   display: block;
   font-weight: bold;
 }
-#firma,
-.firma-comentarios {
-  margin-bottom: 15px;
-  padding: 2px 12px 5px 65px;
-}
-#firma .user-picture,
-.firma-comentarios .user-picture {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#firma .datos-avatar,
-.firma-comentarios .datos-avatar {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-#firma .datos-avatar li,
-.firma-comentarios .datos-avatar li {
-  margin-bottom: 0;
-  font: 400 13px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-#firma .datos-avatar li.nombre a,
-.firma-comentarios .datos-avatar li.nombre a {
-  font-weight: bold;
-}
-#firma .enviar-mensaje,
-.firma-comentarios .enviar-mensaje {
-  margin-top: 0;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
-#firma div.seguir,
-.firma-comentarios div.seguir {
-  margin-bottom: 0;
-  position: absolute;
-  top: 5px;
-  right: 35px;
-  text-align: right;
-}
-#firma div.seguir a.button,
-.firma-comentarios div.seguir a.button {
-  margin: 0 0 3px 0;
-  padding: 5px 13px 7px;
-}
-#firma div.seguir span.seguidores,
-.firma-comentarios div.seguir span.seguidores {
-  display: block;
-}
-.firma > a {
-  padding: 2px 5px 5px 65px;
-  color: #555555;
-  text-decoration: none;
-}
-.firma > a > img {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 5px solid #f0f0f0;
-}
-.firma span {
-  display: block;
-  font: 400 13px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.firma span.usuario,
-.firma span.experto {
-  font-weight: bold;
-}
-.firma.firma-small > a {
+.firma.firma-small {
   min-height: 35px;
   padding: 0 0 0 40px;
   color: #555555;
   background: none;
 }
-.firma.firma-small > a > img {
+.firma.firma-small .user-picture {
   width: 30px;
   height: 30px;
   border: none;
 }
-.destacado .firma a {
-  padding: 5px 20px 5px 65px;
-}
-.destacado .firma a:after {
-  background: url("../img/sprite1.png") no-repeat;
-  background-position: -64px 0px;
-  position: absolute;
-  content: "";
-  width: 32px;
-  height: 32px;
-  right: 0;
-  top: 0;
+.firma.firma-small .user-picture img {
+  width: 30px;
+  height: 30px;
 }
 .lista-ambitos {
   *zoom: 1;
