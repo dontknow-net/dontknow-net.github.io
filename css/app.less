@@ -381,7 +381,6 @@
     .cell{
       width: 34px;
       height: 34px;
-      //min-height: 24px;
       display: table-cell;
       vertical-align: middle;
       text-align: center;
@@ -390,7 +389,6 @@
       border:5px solid lighten(@linkColor, 30%);
       background-color: @white;
       .border-radius(22px);
-      //.box-shadow(1px 1px 2px 1px lighten(@gray, 10%) inset);
     }
   }
   .title{
@@ -436,13 +434,58 @@
   }
 }
 
-// Acciones
-.box-actions{
-  margin:20px 0 20px -31px;
-  padding:20px 0 20px 30px;
-  background: saturate(#E8EFE0, 25%);
-  border:1px solid @grayLighter;
-  .prices{
-    margin-bottom: 15px;
+// LANDING CURSO
+
+// Titulo fijo
+#page-title-container{
+  &.affix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: @white;
+    z-index: 10;
+    .box-shadow(1px 0px 20px 1px @gray);
+    .page-title{
+      padding-left: 20px; 
+    }
+  }
+}
+
+// Columna lateral
+#columna-lateral{
+  padding-top: 80px;
+  &.affix {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    @media (min-width: 1200px) { // Large desktop
+      width: 370px;
+    }
+    @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+      width: 228px;
+    }
+  }
+  .box-actions{
+    margin:0 0 20px -21px;
+    padding:20px 0 20px 20px;
+    background: saturate(#E8EFE0, 25%);
+    border:1px solid @grayLighter;
+    @media (min-width: 1200px) { // Large desktop
+      margin-left:-31px;
+      padding-left:20px 0 20px 30px;
+    }
+    .prices{
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// Compartir
+#compartir{
+  .title{
+    margin-bottom: 7px;
+    font:400 13px/15px @sansFontFamily;
+    text-transform: uppercase;
   }
 }

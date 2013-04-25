@@ -594,12 +594,55 @@
 .teacher.teacher-small:last-child {
   border-bottom: none;
 }
-.box-actions {
-  margin: 20px 0 20px -31px;
-  padding: 20px 0 20px 30px;
+#page-title-container.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 10;
+  -webkit-box-shadow: 1px 0px 20px 1px #555555;
+  -moz-box-shadow: 1px 0px 20px 1px #555555;
+  box-shadow: 1px 0px 20px 1px #555555;
+}
+#page-title-container.affix .page-title {
+  padding-left: 20px;
+}
+#columna-lateral {
+  padding-top: 80px;
+}
+#columna-lateral.affix {
+  width: 300px;
+  position: fixed;
+  top: 0;
+}
+@media (min-width: 1200px) {
+  #columna-lateral.affix {
+    width: 370px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #columna-lateral.affix {
+    width: 228px;
+  }
+}
+#columna-lateral .box-actions {
+  margin: 0 0 20px -21px;
+  padding: 20px 0 20px 20px;
   background: #e8f5da;
   border: 1px solid #dddddd;
 }
-.box-actions .prices {
+@media (min-width: 1200px) {
+  #columna-lateral .box-actions {
+    margin-left: -31px;
+    padding-left: 20px 0 20px 30px;
+  }
+}
+#columna-lateral .box-actions .prices {
   margin-bottom: 15px;
+}
+#compartir .title {
+  margin-bottom: 7px;
+  font: 400 13px/15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }

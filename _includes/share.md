@@ -1,4 +1,4 @@
-<ul class="share-buttons">
+<ul class="share-buttons unstyled">
   <li class="twitter">
     <iframe width="100px" scrolling="no" height="20px" frameborder="0" src="http://platform.twitter.com/widgets/tweet_button.html?url=http://{{ site.host }}{{ page.url }}&amp;via=dontknownet&amp;text={{page.title}}&amp;count=horizontal" role="presentation" allowtransparency="true" class="twitter-share-button" name="tweet_frame" id="tweet_frame"></iframe>
   </li>
