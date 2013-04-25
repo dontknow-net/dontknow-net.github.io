@@ -7,6 +7,14 @@ title: Esta es la HomePage
   {% for post in site.categories.new %}
   <li>
     <a href="{{ post.url }}">
+
+      {% assign profesor_name = post.tags | first %}
+      {% for profesor in site.categories.profesor %}
+        {% if profesor_name == profesor.title %}
+          {{ profesor.title }} {{ profesor.twitter }}
+        {% endif %}
+      {% endfor %}
+
       <p><strong>imagen: </strong>{{post.imagen}}</p>
       {{ post.title }}
       <p><strong>fechas: </strong>{{post.fechas}}</p>

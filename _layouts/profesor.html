@@ -1,0 +1,14 @@
+---
+layout: layout
+---
+{% include header-mini.md %}
+
+<img src="{{page.imagen}}" alt="{{page.title}}">
+<h1>{{page.title}}</h1>
+<div class="cargo">{{page.cargo}}</div>
+
+{{ content }}
+
+<a href="https://twitter.com/{{page.twitter}}">Twitter</a> |
+<a href="{{page.linkedin}}">Linked-in</a> |
+<a href="{{page.dontknow}}">Dontknow</a>
