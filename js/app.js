@@ -3,9 +3,17 @@
   $('#columna-lateral').affix({
       offset: $('#columna-lateral').position()
   });
+
   $('#page-title-wrapper').height($(".page-title").height());
   $('#page-title-container').affix({
       offset: $('.page-title').position()
   });
+
+//    $('#columna-lateral-wrapper').height($("#columna-lateral").height());
+  $('#navbarque').affix({
+      offset: $('#navbarque').position()
+  });
+
+  $('#navbarque').scrollspy();
 
 }());

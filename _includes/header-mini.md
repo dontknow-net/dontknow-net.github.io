@@ -3,7 +3,7 @@
       <header id="header">
         <div class="row">
           <div class="span2">
-            <div class="title hideText">Dontknow School of Life</div>
+            <a href="/"><div class="title hideText">Dontknow School of Life</div></a>
           </div>
           <hgroup>
             <div class="span7">

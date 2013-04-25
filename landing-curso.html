@@ -2,6 +2,7 @@
 layout: curso
 title:
 ---
+
 <div class="container">
   <div class="row">
     <div class="span8">
@@ -176,7 +177,6 @@ title:
                 </div>
               </li>
             </ol>
-
           </section>
           <section>
             <header class="header-section">
@@ -239,14 +239,55 @@ title:
       </div>
       <div class="span4" id="columna-lateral-wrapper">
         <div id="columna-lateral">
-          <div class="box-actions"  >
+          <div class="box-actions">
             <div class="prices">
-             <span class="price">30€</span> <span class="price-free">Gratis a los 100 primeros</span>
-           </div>
-           <a href="" class="btn btn-large btn-primary">Apúntate</a>
-           o <a href="">mantente informado</a>
-         </div>
-         <section id="compartir">
+              <span class="price">30€</span> <span class="price-free">Gratis a los 100 primeros</span>
+            </div>
+            <a href="#modalApuntate" class="btn btn-large btn-primary" role="button" data-toggle="modal">Apúntate</a>
+            o <a href="#modalApuntate" data-toggle="modal">mantente informado</a>
+            <!-- Modal Apuntate -->
+            <div id="modalApuntate" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="modalApuntateLabel" aria-hidden="true">
+              <form action="http://dontknow.us5.list-manage.com/subscribe/post?u=e7d9eea17d963fd9ca8c597de&amp;id=b2b8a6b95e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" novalidate>
+                <!--
+                Para apuntate: 2
+                informado: 1
+              -->
+              <input type="hidden" name="group[16001][1]" id="mce-group[16001]" value="1">
+              <fieldset>
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="modalApuntateLabel">Apúntate</h3>
+                </div>
+                <div class="modal-body">
+                  <div class="control-group">
+                    <label for="mce-EMAIL" class="control-label">Tu email </label>
+                    <div class="controls">
+                      <input type="email" value="" name="EMAIL" class="input-xlarge" id="mce-EMAIL">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label for="mce-FNAME" class="control-label">Nombre </label>
+                    <div class="controls">
+                      <input type="text" value="" name="FNAME" class="input-xlarge" id="mce-FNAME">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label for="mce-LNAME" class="control-label">Apellidos </label>
+                    <div class="controls">
+                      <input type="text" value="" name="LNAME" class="input-xlarge" id="mce-LNAME">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+
+                  <input type="submit" value="Apúntate" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-primary">
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <section id="compartir">
           <header class="title">Compártelo</header>
           {% include share.md %}
         </section>
