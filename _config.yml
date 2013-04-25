@@ -4,3 +4,4 @@ server: true
 permalink: /:year/:month/:day/:title
 #rdiscount extensions: [smart]
 exclude: dkschool.sublime-project dkschool.sublime-workspace Drupal.sublime-projectcompletions
+host: dontknow-net.github.io
