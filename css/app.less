@@ -4,6 +4,15 @@
 @import "firma.less";
 @import "ambitos.less";
 
+// Buttons
+.btn-primary{
+  &:hover, &:active, &.active, &.disabled, &[disabled] {
+    background-color: lighten(@linkColor, 5%);
+    *background-color: darken(@linkColor, 5%);
+    background-image: none;
+  }
+} 
+
 // Block links
 .block-link{
   display: block;
@@ -51,6 +60,7 @@
   margin: 0 5px 0 0;
   padding: 10px 15px;
   display: inline-block;
+  position: relative;
   #gradient > .vertical(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
   font:700 24px/32px @sansFontFamily;
   color: @white;
@@ -60,6 +70,19 @@
 .price-free{
   font:400 24px/32px @handFontFamily;
   color: @gray;
+  @media (max-width: 479px){ // mobile vertical
+    display: block;
+  }
+}
+.delete{
+  width:73px;
+  height:67px;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  z-index: 10;
+  display: inline-block;
+  background: url(../img/aspa.png) 0 0 no-repeat;
 }
 
 .mostrar-mas{
@@ -69,6 +92,10 @@
 
 // Contenido principal
 #primary-content{
+  @media (max-width: 767px){ // mobile
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
   #gradient > .vertical(#333, #303030);
   .box-shadow(1px 0px 20px 1px @gray);
   // Cabecera
@@ -86,6 +113,9 @@
       text-align: right;
       letter-spacing: 1px;
       color: lighten(@grayLight, 15%);
+      @media (max-width: 767px){ // mobile
+        text-align: left;
+      }
     }
   }
   .well{
@@ -95,6 +125,9 @@
     position: relative;
     .img-polaroid{
       border:1px solid @white;
+      @media (max-width: 767px){ // mobile
+        margin-bottom: 10px;
+      }
     }
     .lista-ambitos{
       .type{
@@ -105,9 +138,13 @@
       margin-top: 5px;
       font:700 40px/42px @sansFontFamily;
       color: @grayLighter;
+      @media (max-width: 767px){ // mobile
+        margin-bottom: 20px;
+        font:700 30px/32px @sansFontFamily;
+      }
     }
     .firma{
-      margin-right: -26px;
+      margin-right: -27px;
       background-color: darken(@whiteDarker, 20%);
       .box-shadow(-1px 1px 2px 1px #444);
       .user-picture{
@@ -115,12 +152,14 @@
       }
       &:after{
         position:absolute;
-        right:0;
-        top:60px;
-        border-bottom:4px solid transparent;
-        border-right:3px solid transparent;
-        border-top:3px solid darken(@whiteDarker, 50%);
-        border-left:3px solid darken(@whiteDarker, 50%);
+        right:-1px;
+        top:-7px;
+        border-width: 4px 4px 3px;
+        border-style: solid;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: darken(@whiteDarker, 50%);
+        border-left-color: darken(@whiteDarker, 50%);
         content:"";     
       }
     }
@@ -198,13 +237,22 @@
 .block-link{
   &:hover{
     .thumbnail{
+      margin: -5px;
+      padding: 9px;
       border-color: lighten(@grayLight, 10%);
       .box-shadow(1px 1px 7px 0px #bbb);
       .photo{
+        background: @black;
+        @media (max-width: 767px) { // mobile
+          background: @white;
+        }
         img{
           .transition(all 1s ease);
-          .opacity(50);
+          .opacity(80);
         }
+      }
+      .title{
+        color:@linkColorHover;
       }
     }
   }
@@ -216,9 +264,8 @@
     clear:both;
   }
   .thumbnail{
-    position: relative;
     .photo{
-      background: @black;
+      position: relative;
     }
     .title{
       margin-top: 0;
@@ -229,8 +276,16 @@
       margin:0;
       position: absolute;
       top:70px;
-      right: 4px;
+      right: 0px;
       .border-radius(4px 0 0 4px);
+      @media (min-width: 768px) and (max-width: 979px) { // tablet
+        top:30px;  
+      }
+      @media (max-width: 767px) { // mobile
+        left:0;
+        right: auto;
+        .border-radius(0 4px 4px 0);
+      }
     }
     .actions{
       .pull-right{
@@ -247,13 +302,23 @@
   border-top: 10px solid @gray;
   background-color: @grayDark;
   color: @grayLight;
+  @media (max-width: 767px) { // mobile
+    margin: 0 -20px;
+    padding: 20px;
+  }
   #copy{
     padding-top: 5px;
     font:400 13px/15px @sansFontFamily;
     color: @grayLight;
+    @media (max-width: 767px) { // mobile
+      margin-bottom: 20px;
+    }
     .logo{
       display: block;
       .spriteReplace (sprite1, 0, 0, 174px, 55px);  
+    }
+    a{
+      color:@grayLighter;
     } 
   }
 }
