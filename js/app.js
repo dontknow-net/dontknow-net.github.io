@@ -4,7 +4,7 @@
       offset: $('#columna-lateral').position()
   });
   $('#page-title-wrapper').height($(".page-title").height());
-  $('.page-title').affix({
+  $('#page-title-container').affix({
       offset: $('.page-title').position()
   });
 
