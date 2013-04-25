@@ -71,6 +71,7 @@
   height: 30px;
 }
 .lista-ambitos {
+  margin-bottom: 5px;
   *zoom: 1;
 }
 .lista-ambitos:before,
@@ -225,6 +226,7 @@
   color: #ffffff;
 }
 #primary-content .well .title {
+  margin-top: 5px;
   font: 700 40px/42px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #dddddd;
 }
@@ -345,6 +347,7 @@
   background: #000000;
 }
 .thumbnails .thumbnail .title {
+  margin-top: 0;
   margin-bottom: 15px;
   font: 700 20px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
