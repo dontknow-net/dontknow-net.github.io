@@ -608,6 +608,29 @@
 #page-title-container.affix .page-title {
   padding-left: 20px;
 }
+#navbarque.affix {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#navbarque.affix .container {
+  width: 898px;
+}
+@media (min-width: 1200px) {
+  #navbarque.affix .container {
+    width: 1128px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #navbarque.affix .container {
+    width: 682px;
+  }
+}
+@media (max-width: 767px) {
+  #navbarque.affix .container {
+    width: auto;
+  }
+}
 #columna-lateral {
   padding-top: 80px;
 }
@@ -645,4 +668,10 @@
   margin-bottom: 7px;
   font: 400 13px/15px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+}
+#que-es {
+  margin-bottom: 40px;
+}
+#que-es .title.hand {
+  font: 400 26px/30px 'Shadows Into Light Two', cursive;
 }

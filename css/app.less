@@ -397,6 +397,7 @@
   }
 }
 
+// Info del curso
 #info-course-online{
   .title{
     margin-top: 20px;
@@ -452,6 +453,28 @@
   }
 }
 
+// Navbar Anclas fijo
+#navbarque{
+  &.affix{
+    top: 0;
+    left: 0;
+    width: 100%; 
+    .container{
+      width:898px;
+      @media (min-width: 1200px) { // Large desktop
+        width: 1128px;
+      }
+      @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+        width: 682px;
+      }
+      @media (max-width: 767px) { // mobile
+        width: auto;
+      }
+    }
+  }
+}
+
+
 // Columna lateral
 #columna-lateral{
   padding-top: 80px;
@@ -487,5 +510,15 @@
     margin-bottom: 7px;
     font:400 13px/15px @sansFontFamily;
     text-transform: uppercase;
+  }
+}
+
+// Que es
+#que-es{
+  margin-bottom: 40px;
+  .title{
+    &.hand{
+      font:400 26px/30px @handFontFamily;
+    }
   }
 }
