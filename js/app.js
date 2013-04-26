@@ -14,10 +14,12 @@
       offset: $('#navbarque').position()
   });
 
-  $('#navbarque').scrollspy();
+  $('body').scrollspy({
+      offset: $('#navbarque').height()
+  });
 
   $(".scroll").click(function(event){
-    //event.preventDefault();
+    event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 500);
   });
 
