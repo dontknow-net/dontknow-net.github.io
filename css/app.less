@@ -435,15 +435,16 @@
 }
 
 // Profesores
-.teacher{
-  .description{
-    padding-top: 5px;
-  }
-  &.teacher-small{
-    margin-bottom: 15px;
-    border-bottom: 1px solid @grayLighter;
-    &:last-child{
-      border-bottom:none;
+#teachers{
+  margin-bottom: 30px;
+  .teacher{
+    .firma{
+      margin-bottom: 7px;
+    }
+    &.teacher-small{
+      .description{
+        font: 400 13px/18px @sansFontFamily; 
+      }
     }
   }
 }
@@ -549,6 +550,7 @@
 // Que es
 #que-es{
   margin-bottom: 40px;
+  padding-top: 20px;
   .title{
     &.hand{
       font:400 26px/30px @handFontFamily;
@@ -560,5 +562,15 @@
 #modalApuntate{
   form{
     margin:0;
+  }
+}
+
+// Logos Colaboradores
+#logos{
+  width: 100%;
+  display: table;
+  .logo{
+    display: table-cell;
+    vertical-align: middle;
   }
 }
