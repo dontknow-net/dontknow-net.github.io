@@ -12,6 +12,6 @@
   </li>
   {% endcomment %}
   <li class="facebook">
-    <div class="fb-like" data-href="http://{{ site.host }}{{ page.url }}" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial" data-action="recommend"></div>
+    <div class="fb-like" data-href="http://{{ site.host }}{{ page.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial" data-action="recommend"></div>
   </li>
 </ul>
