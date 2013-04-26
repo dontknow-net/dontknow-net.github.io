@@ -117,6 +117,14 @@
         text-align: left;
       }
     }
+    .header-actions{
+      .btn{
+        margin-bottom: 3px;
+      }
+      .link{
+        color: @grayLighter;
+      }
+    }
   }
   .well{
     margin-bottom: 35px;
@@ -325,7 +333,12 @@
 
 // Page
 .page-title{
-  margin-top: 0;
+  margin: 0;
+}
+
+#course-date-duration{
+  text-transform: uppercase;
+  text-align: right;
 }
 
 // Duracion
@@ -438,7 +451,13 @@
 // LANDING CURSO
 
 // Titulo fijo
+#page-title-wrapper{
+  margin-bottom: 10px;
+}
 #page-title-container{
+  .container{
+    width: auto;
+  }
   &.affix{
     position: fixed;
     top: 0;
@@ -447,8 +466,22 @@
     background-color: @white;
     z-index: 10;
     .box-shadow(1px 0px 20px 1px @gray);
-    .page-title{
-      padding-left: 20px; 
+    .container{
+      @media (min-width: 1200px) { // Large desktop
+        width: 1170px;
+      }
+      @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+        width: 940px;
+      }
+      @media (max-width: 767px) { // Landscape phone to portrait tablet
+        width: 724px;
+      }      
+      @media (max-width: 480px) { // Landscape phones and down
+        width: auto;
+      }
+      .page-title{
+        padding: 7px 20px 10px 20px;
+      }  
     }
   }
 }
@@ -520,5 +553,12 @@
     &.hand{
       font:400 26px/30px @handFontFamily;
     }
+  }
+}
+
+// Modal apuntate
+#modalApuntate{
+  form{
+    margin:0;
   }
 }

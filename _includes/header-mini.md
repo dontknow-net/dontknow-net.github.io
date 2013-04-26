@@ -11,12 +11,12 @@
             </div>
           </hgroup>
           <div class="span3">
-            <ul class="unstyled">
+            <ul class="header-actions unstyled">
               <li>
-                <a href="/" class="btn">Ver itinerarios</a>
+                <a href="/" class="btn">← Ver itinerarios</a>
               </li>
               <li>
-                <a href="/que-es.html">Saber más sobre dksol</a>
+                <a href="/que-es.html" class="link">Saber más sobre dksol</a>
               </li>
             </ul>
           </p>
