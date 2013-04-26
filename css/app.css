@@ -595,15 +595,14 @@
 #info-course-online ul li:nth-child(even) {
   float: right;
 }
-.teacher .description {
-  padding-top: 5px;
+#teachers {
+  margin-bottom: 30px;
 }
-.teacher.teacher-small {
-  margin-bottom: 15px;
-  border-bottom: 1px solid #dddddd;
+#teachers .teacher .firma {
+  margin-bottom: 7px;
 }
-.teacher.teacher-small:last-child {
-  border-bottom: none;
+#teachers .teacher.teacher-small .description {
+  font: 400 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #page-title-wrapper {
   margin-bottom: 10px;
@@ -708,10 +707,19 @@
 }
 #que-es {
   margin-bottom: 40px;
+  padding-top: 20px;
 }
 #que-es .title.hand {
   font: 400 26px/30px 'Shadows Into Light Two', cursive;
 }
 #modalApuntate form {
   margin: 0;
+}
+#logos {
+  width: 100%;
+  display: table;
+}
+#logos .logo {
+  display: table-cell;
+  vertical-align: middle;
 }
