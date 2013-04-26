@@ -9,7 +9,7 @@
       offset: $('.page-title').position()
   });
 
-//    $('#columna-lateral-wrapper').height($("#columna-lateral").height());
+  $('#navbarque-wrapper').height($("#navbarque").height());
   $('#navbarque').affix({
       offset: $('#navbarque').position()
   });
@@ -18,6 +18,7 @@
 
   $(".scroll").click(function(event){
     //event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top - 80}, 500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 500);
   });
+
 }());
