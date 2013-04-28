@@ -15,7 +15,7 @@
   });
 
   $('body').scrollspy({
-      offset: $('#navbarque').height()
+      offset: $('#navbarque').height() - 5
   });
 
   $(".scroll").click(function(event){

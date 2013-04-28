@@ -2,6 +2,7 @@
 layout: layout
 title:
 published: false
+
 ---
 
 <section id="primary-content">
@@ -18,46 +19,52 @@ published: false
         </hgroup>
       </div>
     </header>
-    <a href="landing-curso.html" class="block-link">
-      <section class="course well">
-        <div class="row-fluid">
-          <div class="span4">
-            <div class="photo">
-              <img src="img/content/img.rostro-panuelo.jpg" class="img-polaroid" alt="Mujer con pañuelo">
-            </div>
-          </div>
-          <div class="span8">
-            <div class="row-fluid">
-              <div class="span8">
-                <ul class="lista-ambitos inline">
-                  <li class="type">Mejorar la sociedad</li>
-                  <li class="ambito">Medio ambiente</li>
-                  <li class="ambito">Salud</li>
-                </ul>
-                <h2 class="title">Nacionalismo</h2>
+
+    {% for post in site.categories.new %}
+      <a href="{{ post.url }}" class="block-link">
+        <section class="course well">
+          <div class="row-fluid">
+            <div class="span4">
+              <div class="photo">
+                <img src="{{post.imagen}}" class="img-polaroid" alt="{{ post.title }}">
               </div>
-              <div class="span4">
-                <div class="firma">
-                  <div class="user-picture">
-                    <img src="/content/imgs/jordi-cusso.jpg" alt="Jordi Cusso">
-                  </div>
-                  <span class="teacher">Tutor</span>
-                  <span class="name">Jordi Cusso</span>
-                  Economista y director de la Universitas Albertiana de Barcelona
+            </div>
+            <div class="span8">
+              <div class="row-fluid">
+                <div class="span8">
+                  <ul class="lista-ambitos inline">
+                    <li class="type">{{post.tipo}}</li>
+                    <li class="ambito">{{post.ambito}}</li>
+                  </ul>
+                  <h2 class="title">{{ post.title }}</h2>
                 </div>
+
+                {% assign profesor_name = post.tags | first %}
+                {% for profesor in site.categories.profesor %}
+                  {% if profesor_name == profesor.title %}
+                    <div class="span4">
+                      <div class="firma">
+                        <div class="user-picture">
+                          <img src="{{ profesor.imagen }}" alt="{{ profesor.title }}">
+                        </div>
+                        <span class="teacher">Tutor</span>
+                        <span class="name">{{ profesor.title }}</span>
+                        {{ profesor.cargo }}
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endfor %}
               </div>
+              <p class="lead">{{post.entradilla}}</p>
+              <span class="price">{{post.precio}}€</span>
+              <span class="sticker">
+                <span class="cell">Nuevo</span>
+              </span>
             </div>
-            <p class="lead">Tendrás una opinión más fundamentada sobre el nacionalismo que te permitirá dialogar y decidir tu postura de manera más consciente y racional</p>
-
-            <span class="price">30€</span>
-
-            <span class="sticker">
-              <span class="cell">Nuevo</span>
-            </span>
           </div>
-        </div>
-      </section>
-    </a>
+        </section>
+      </a>
+    {% endfor %}
   </div>
 </section>
 
@@ -65,225 +72,62 @@ published: false
   <section id="courses-in-progress">
     <header class="header-section">En proceso</header>
     <ul class="thumbnails">
-      <li class="span4">
-        <a href="" class="block-link">
-          <div class="thumbnail">
-            <div class="photo">
-              <img src="img/content/img.naturaleza.jpg" alt="Girasoles">
-              <span class="price">30€</span>
-            </div>
-            <div class="caption">
-              <ul class="lista-ambitos inline">
-                <li class="type">Desarrollo personal</li>
-                <li class="ambito">Medio ambiente</li>
-                <li class="ambito">Salud</li>
-              </ul>
-              <h2 class="title">Cuidar tu salud a la vez que el medio ambiente</h2>
-              <div class="firma">
-                <div class="user-picture">
-                  <img src="img/content/img.avatar.jpg" alt="Juan Palomo">
-                </div>
-                <span class="teacher">Tutor</span>
-                <span class="name">Juan Palomo</span>
-                Catedrático en Ciencias Políticas y Sociales
+      {% for post in site.categories.proceso %}
+        <li class="span4">
+          <a href="{{ post.url }}" class="block-link">
+            <div class="thumbnail">
+              <div class="photo">
+                <img src="{{post.imagen}}" alt="{{ post.title }}">
+                <span class="price">{{post.precio}}€</span>
               </div>
+              <div class="caption">
+                <ul class="lista-ambitos inline">
+                  <li class="type">{{post.tipo}}</li>
+                  <li class="ambito">{{post.ambito}}</li>
+                </ul>
+                <h2 class="title">{{ post.title }}</h2>
 
-            </div>
-          </div>
-        </a>
-      </li>
-      <li class="span4">
-        <a href="" class="block-link">
-          <div class="thumbnail">
-            <div class="photo">
-              <img src="img/content/img.rostro.jpg" alt="Rostro de mujer">
-              <span class="price">30€</span>
-            </div>
-            <div class="caption">
-              <ul class="lista-ambitos inline">
-                <li class="type">Desarrollo personal</li>
-                <li class="ambito">Religión</li>
-                <li class="ambito">Salud</li>
-              </ul>
-              <h2 class="title">Revisar tus creencias</h2>
-              <div class="firma">
-                <div class="user-picture">
-                  <img src="/content/imgs/jose-lazaro-60.jpg" alt="José Lázaro">
-                </div>
-                <span class="teacher">Tutor</span>
-                <span class="name">José Lázaro</span>
-                Profesor de Humanidades Médicas, UAM
+                {% assign profesor_name = post.tags | first %}
+                {% for profesor in site.categories.profesor %}
+                  {% if profesor_name == profesor.title %}
+                    <div class="firma">
+                      <div class="user-picture">
+                        <img src="{{ profesor.imagen }}" alt="{{ profesor.title }}">
+                      </div>
+                      <span class="teacher">Tutor</span>
+                      <span class="name">{{ profesor.title }}</span>
+                      {{ profesor.cargo }}
+                    </div>
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
-          </div>
-        </a>
-      </li>
-      <li class="span4">
-        <a href="" class="block-link">
-          <div class="thumbnail">
-            <div class="photo">
-              <img src="img/content/img.abstracto.jpg" alt="Imagen abstracta">
-              <span class="price">30€</span>
-            </div>
-            <div class="caption">
-              <ul class="lista-ambitos inline">
-                <li class="type">Desarrollo personal</li>
-                <li class="ambito">Medio ambiente</li>
-                <li class="ambito">Salud</li>
-              </ul>
-              <h2 class="title">Ser más creativo en la vida y el trabajo</h2>
-              <div class="firma">
-                <div class="user-picture">
-                  <img src="img/content/img.avatar.jpg" alt="Juan Palomo">
-                </div>
-                <span class="teacher">Tutor</span>
-                <span class="name">Juan Palomo</span>
-                Catedrático en Ciencias Políticas y Sociales
-              </div>
-            </div>
-          </div>
-        </a>
-      </li>
+          </a>
+        </li>
+      {% endfor %}
     </ul>
   </section>
+
   <section id="courses-future">
     <header class="header-section">Próximamente</header>
     <ul class="thumbnails">
-      <li class="span4">
-        <div class="thumbnail">
-          <div class="caption">
-            <ul class="lista-ambitos inline">
-              <li class="type">Desarrollo personal</li>
-              <li class="ambito">Familia</li>
-              <li class="ambito">Salud</li>
-            </ul>
-            <h2 class="title">Tecnología e hijos: aprende a gestionarlo</h2>
-            <div class="actions">
-              <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
+      {% for post in site.categories.futuros %}
+        <li class="span4">
+            <div class="thumbnail">
+              <div class="caption">
+                <ul class="lista-ambitos inline">
+                  <li class="type">{{post.tipo}}</li>
+                  <li class="ambito">{{post.ambito}}</li>
+                </ul>
+                <h2 class="title">{{ post.title }}</h2>
+                <div class="actions">
+                  <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <div class="caption">
-            <ul class="lista-ambitos inline">
-              <li class="type">Desarrollo profesional</li>
-              <li class="ambito">Medio ambiente</li>
-              <li class="ambito">Salud</li>
-            </ul>
-            <h2 class="title">Reinventa tu profesión de arquitecto</h2>
-            <div class="actions">
-              <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <div class="caption">
-            <ul class="lista-ambitos inline">
-              <li class="type">Desarrollo personal</li>
-              <li class="ambito">Medio ambiente</li>
-              <li class="ambito">Salud</li>
-            </ul>
-            <h2 class="title">Mejorar la convivencia en casa</h2>
-            <div class="actions">
-              <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <div class="caption">
-            <ul class="lista-ambitos inline">
-              <li class="type">Desarrollo profesional</li>
-              <li class="ambito">Medio ambiente</li>
-              <li class="ambito">Salud</li>
-            </ul>
-            <h2 class="title">¿Estás desempleado? Conviértelo en nuevas oportunidades</h2>
-            <div class="actions">
-              <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <div class="caption">
-            <ul class="lista-ambitos inline">
-              <li class="type">Desarrollo personal</li>
-              <li class="ambito">Medio ambiente</li>
-              <li class="ambito">Salud</li>
-            </ul>
-            <h2 class="title">Deporte e hijos: aprende a gestionarlo</h2>
-            <div class="actions">
-              <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <div class="caption">
-            <ul class="lista-ambitos inline">
-              <li class="type">Desarrollo personal</li>
-              <li class="ambito">Medio ambiente</li>
-              <li class="ambito">Salud</li>
-            </ul>
-            <h2 class="title">Mejora la comunicación con tu hijo adolescente</h2>
-            <div class="actions">
-              <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <div class="caption">
-            <ul class="lista-ambitos inline">
-              <li class="type">Desarrollo personal</li>
-              <li class="ambito">Medio ambiente</li>
-              <li class="ambito">Salud</li>
-            </ul>
-            <h2 class="title">Herramientas para elegir una profesión</h2>
-            <div class="actions">
-              <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <div class="caption">
-            <ul class="lista-ambitos inline">
-              <li class="type">Desarrollo personal</li>
-              <li class="ambito">Medio ambiente</li>
-              <li class="ambito">Salud</li>
-            </ul>
-            <h2 class="title">Convivir con el mal</h2>
-            <div class="actions">
-              <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <div class="caption">
-            <ul class="lista-ambitos inline">
-              <li class="type">Mejorar la sociedad</li>
-              <li class="ambito">Medio ambiente</li>
-              <li class="ambito">Salud</li>
-            </ul>
-            <h2 class="title">Estado de Bienestar. Tu aportación para conseguirlo.</h2>
-            <div class="actions">
-              <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
-            </div>
-          </div>
-        </div>
-      </li>
+          </a>
+        </li>
+      {% endfor %}
     </ul>
   </section>
 </div>
