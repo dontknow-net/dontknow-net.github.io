@@ -1,3 +1,8 @@
+---
+---
+{% include js/jquery.1.9.1.min.js %}
+{% include js/bootstrap.min.js%}
+
 (function() {
   $('#columna-lateral-wrapper').height($("#columna-lateral").height());
   $('#columna-lateral').affix({
