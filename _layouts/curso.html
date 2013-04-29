@@ -3,4 +3,213 @@ layout: layout
 ---
 {% include share-fb-header.md %}
 {% include header-mini.md %}
-{{ content }}
+
+<div class="container">
+  <div class="row">
+    <div class="span8">
+      <article class="course well">
+        <div class="row-fluid">
+          <div class="span6">
+            <ul class="lista-ambitos inline">
+              <li class="type">{{page.tipo}}</li>
+              <li class="ambito">{{page.ambito}}</li>
+            </ul>
+          </div>
+          <div id="course-date-duration" class="span6">
+            <span class="date">{{page.fecha}}</span>. <span class="duration">{{page.duracion}}</span></div>
+          </div>
+          <div id="page-title-wrapper">
+            <div id="page-title-container">
+              <div class="container">
+                <h1 class="page-title">{{page.title}}</h1>
+              </div>
+            </div>
+          </div>
+          <p class="lead">{{ page.entradilla }}</p>
+
+          <div class="row-fluid">
+            {% for tag in page.tags %}
+              {% assign primero = forloop.first %}
+              {% assign index = forloop.index %}
+              {% assign es_par = forloop.index | modulo:2 %}
+
+              {% for profesor in site.categories.profesor %}
+                {% if tag == profesor.title %}
+                  {% if primero == true %}
+                    <div class="span6">
+                      <div class="firma">
+                        <div class="user-picture">
+                          <img src="{{profesor.imagen}}" alt="{{profesor.title}}">
+                        </div>
+                        <span class="teacher">Tutor</span>
+                        <span class="name">{{profesor.title}}</span>
+                      </div>
+                    </div>
+                    <div class="span6">
+                      <div class="row-fluid">
+                  {% else %}
+                    {% if es_par  == 0 and index > 2%}
+                      </div><div class="row-fluid">
+                    {% endif %}
+
+                      <div class="span6">
+                        <div class="firma firma-small">
+                          <div class="user-picture">
+                            <img src="{{profesor.imagen}}" alt="{{profesor.title}}">
+                          </div>
+                          <span class="name">{{profesor.title}}</span>
+                        </div>
+                      </div>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+                      <div class="span6">
+                        <a href="#teachers" class="btn btn-mini scroll">Ver equipo</a>
+                      </div>
+                    </div>
+                </div>
+          </div>
+          <hr>
+
+          {{content}}
+
+          <section id="teachers">
+            <header class="header-section">
+              <h2> Equipo de profesores </h2>
+            </header>
+            <div class="row-fluid">
+              {% for tag in page.tags %}
+                {% assign primero = forloop.first %}
+                {% assign index = forloop.index %}
+                {% assign es_par = forloop.index | modulo:2 %}
+
+                {% for profesor in site.categories.profesor %}
+                  {% if tag == profesor.title %}
+                    {% if primero == true %}
+                      <div class="span6">
+                        <div class="teacher well well-small">
+                          <div class="firma">
+                            <div class="user-picture">
+                              <img src="{{profesor.imagen}}" alt="{{profesor.title}}">
+                            </div>
+                            <span class="teacher">Tutor</span>
+                            <span class="name">{{profesor.title}}</span>
+                            {{profesor.cargo}}
+                          </div>
+                          <p class="description">{{profesor.content}}</p>
+                          {% if profesor.dontknow | size > 0 %}
+                            <a href="{{profesor.dontknow}}" class="btn btn-small">Experto de Dontknow</a>
+                          {% endif %}
+                          {% if profesor.twitter | size > 0 %}
+                            <a href="https://twitter.com/{{profesor.twitter}}" class="btn btn-small">Twitter</a>
+                          {% endif %}
+                          {% if profesor.linkedin | size > 0 %}
+                            <a href="{{profesor.linkedin}}" class="btn btn-small">Linkedin</a>
+                          {% endif %}
+                        </div>
+                      </div>
+                      <div class="span6">
+                    {% else %}
+                      <div class="teacher teacher-small well well-small">
+                        <div class="firma firma-small">
+                          <div class="user-picture">
+                            <img src="{{profesor.imagen}}" alt="{{profesor.title}}">
+                          </div>
+                          <span class="name">{{profesor.title}}</span>
+                            {{profesor.cargo}}
+                        </div>
+                        <p class="description">{{profesor.entradilla}}</p>
+                        {% if profesor.dontknow | size > 0 %}
+                          <a href="{{profesor.dontknow}}" class="btn btn-mini">Experto de Dontknow</a>
+                        {% endif %}
+                        {% if profesor.twitter | size > 0 %}
+                          <a href="https://twitter.com/{{profesor.twitter}}" class="btn btn-mini">Twitter</a>
+                        {% endif %}
+                        {% if profesor.linkedin | size > 0 %}
+                          <a href="{{profesor.linkedin}}" class="btn btn-mini">Linkedin</a>
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+              </div>
+            </div>
+          </section>
+
+          {% if page.colaboran != empty %}
+            <section>
+              <header class="header-section">
+                <h2>Organizaciones que colaboran</h2>
+              </header>
+              <div id="logos">
+                {% for colabora in page.colaboran %}
+                  <div class="logo">
+                    {{colabora}}
+                  </div>
+                {% endfor %}
+              </div>
+            </section>
+          {% endif %}
+        </article>
+      </div>
+      <div class="span4" id="columna-lateral-wrapper">
+        <div id="columna-lateral">
+          <div class="box-actions">
+            <div class="prices">
+              <span class="price">{{ page.precio}} €</span>
+            </div>
+            <a href="#modalApuntate" class="open-modal-apuntate btn btn-large btn-primary" role="button" data-id="{{page.id_apuntarme}}" data-toggle="modal">Apúntate</a>
+            o <a href="#modalMeInteresa" data-toggle="modal" data-id="{{page.id_interesado}}" class="open-modal-informado">mantente informado</a>
+        </div>
+        <section id="compartir">
+          <header class="title">Compártelo</header>
+          {% include share.md %}
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Apuntate -->
+<div id="modalApuntate" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="modalApuntateLabel" aria-hidden="true">
+  <form action="http://dontknow.us5.list-manage.com/subscribe/post?u=e7d9eea17d963fd9ca8c597de&amp;id=b2b8a6b95e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" novalidate>
+  <input type="hidden" name="group[16001][1]" id="id_mailchimp" value="1">
+  <fieldset>
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 id="modalApuntateLabel">Apúntate</h3>
+    </div>
+    <div class="modal-body">
+      <p>Déjanos tus datos en este formulario y te enviaremos la información para el pago del curso.</p>
+
+      <div class="control-group">
+        <label for="mce-EMAIL" class="control-label">Tu email </label>
+        <div class="controls">
+          <input type="email" value="" name="EMAIL" class="input-xlarge" id="mce-EMAIL">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="mce-FNAME" class="control-label">Nombre </label>
+        <div class="controls">
+          <input type="text" value="" name="FNAME" class="input-xlarge" id="mce-FNAME">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="mce-LNAME" class="control-label">Apellidos </label>
+        <div class="controls">
+          <input type="text" value="" name="LNAME" class="input-xlarge" id="mce-LNAME">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+
+      <input type="submit" value="Apúntate" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-primary">
+    </div>
+  </fieldset>
+</form>
+</div>
+
+{% include me-interesa.html %}

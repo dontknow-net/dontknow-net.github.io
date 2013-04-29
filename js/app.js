@@ -1,3 +1,8 @@
+---
+---
+{% include js/jquery.1.9.1.min.js %}
+{% include js/bootstrap.min.js%}
+
 (function() {
   $('#columna-lateral-wrapper').height($("#columna-lateral").height());
   $('#columna-lateral').affix({
@@ -15,12 +20,21 @@
   });
 
   $('body').scrollspy({
-      offset: $('#navbarque').height()
+      offset: $('#navbarque').height() - 5
   });
 
   $(".scroll").click(function(event){
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top - 50}, 500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top - 60}, 500);
   });
 
+  $(document).on("click", ".open-modal-apuntate", function () {
+       var idMailchimp = $(this).data('id');
+       $("#modalApuntate #id_mailchimp").attr("name","group[16001][" + idMailchimp + "]");
+  });
+
+  $(document).on("click", ".open-modal-informado", function () {
+       var idMailchimp = $(this).data('id');
+       $("#modalMeInteresa #id_mailchimp2").attr("name","group[16001][" + idMailchimp + "]");
+  });
 }());
