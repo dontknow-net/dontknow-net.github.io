@@ -1,25 +1,27 @@
 ---
 layout: curso
-title: Ser más creativo en la vida y el trabajo
-fecha: 15 Agosto
-duracion: 10 semanas
-imagen: /content/imgs/cursos/img.abstracto.jpg
-precio: 250
-tipo: Desarrollo personal
-ambito: Trabajo
-category: proceso
+title: Nacionalismo. Ten un punto de vista fundamentado.
+fecha: 15 Junio
+duracion: 3 semanas
+imagen: /content/imgs/cursos/img.rostro-panuelo.jpg
+precio: 30
+tipo: Mejorar la sociedad
+ambito: Paz y convivencia
+category: new
 tags:
+  - Jordi Cussó Porredón
   - Enrique Baca Baldomero
   - Fancesc Torralba
+  - Jorge Úbeda
 entradilla: |
   Aprende y debate sobre un tema que apasiona a todos, pero pocos conocen bien.
   Dialoga y define tu postura de manera más consciente y racional.
 colaboran:
-  - <img src="/content/imgs/img.logo-carta-onu.png" alt="Fundación Carta de la Paz dirigida a la ONU">
-  - <img src="/content/imgs/img.logo-edificar-paz.png" alt="Edificar la paz en el siglo XXI">
-  - <img src="/content/imgs/img.logo-escuela-filosofia.png" alt="Escuela de Filosofía">
-id_interesado: 4
-id_apuntarme: 8
+  - <a href="http://www.cartadelapaz.org/"><img src="/content/imgs/img.logo-carta-onu.png" alt="Fundación Carta de la Paz dirigida a la ONU"></a>
+  - <a href="http://www.edificarlapaz.org/"><img src="/content/imgs/img.logo-edificar-paz.png" alt="Edificar la paz en el siglo XXI"></a>
+  - <a href="http://www.escueladefilosofia.com/"><img src="/content/imgs/img.logo-escuela-filosofia.png" alt="Escuela de Filosofía"></a>
+id_interesado: 1
+id_apuntarme: 2
 published: true
 ---
 
@@ -35,7 +37,8 @@ published: true
   </ol>
 </section>
 <hr>
-<section id="info-course-online" >
+
+<section id="info-course-online">
   <header>
     <div class="row-fluid">
       <div class="span6" >
@@ -63,10 +66,10 @@ published: true
     </div>
   </header>
   <ul>
-    <li><i class="icon-ok"></i> Debate con expertos en el tema del itinerario.</li>
-    <li><i class="icon-ok"></i> Conversa con alumnos con tus mismas inquietudes.</li>
-    <li><i class="icon-ok"></i> Aprende a tu ritmo, aunque hay un calendario, puedes seguir participando en el itinerario y accediendo a sus contenidos</li>
-    <li><i class="icon-ok"></i> Recibe la documentación al acabar el itinerario.</li>
+      <li><i class="icon-ok"> </i> Debate con expertos en el tema del itinerario.</li>
+      <li><i class="icon-ok"> </i>  Conversa con alumnos con tus mismas inquietudes.</li>
+      <li><i class="icon-ok"> </i>  Aprende a tu ritmo, aunque hay un calendario, puedes seguir participando en el itinerario y accediendo a sus contenidos</li>
+      <li><i class="icon-ok"> </i>  Recibe la documentación al acabar el itinerario.</li>
   </ul>
 </section>
 

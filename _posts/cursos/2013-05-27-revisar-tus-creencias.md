@@ -34,7 +34,8 @@ published: false
   </ol>
 </section>
 <hr>
-<section id="info-course-online" >
+
+<section id="info-course-online">
   <header>
     <div class="row-fluid">
       <div class="span6" >
@@ -62,10 +63,10 @@ published: false
     </div>
   </header>
   <ul>
-    <li><i class="icon-ok"></i> Debate con expertos en el tema del itinerario.</li>
-    <li><i class="icon-ok"></i> Conversa con alumnos con tus mismas inquietudes.</li>
-    <li><i class="icon-ok"></i> Aprende a tu ritmo, aunque hay un calendario, puedes seguir participando en el itinerario y accediendo a sus contenidos</li>
-    <li><i class="icon-ok"></i> Recibe la documentación al acabar el itinerario.</li>
+      <li><i class="icon-ok"> </i> Debate con expertos en el tema del itinerario.</li>
+      <li><i class="icon-ok"> </i>  Conversa con alumnos con tus mismas inquietudes.</li>
+      <li><i class="icon-ok"> </i>  Aprende a tu ritmo, aunque hay un calendario, puedes seguir participando en el itinerario y accediendo a sus contenidos</li>
+      <li><i class="icon-ok"> </i>  Recibe la documentación al acabar el itinerario.</li>
   </ul>
 </section>
 
