@@ -19,7 +19,7 @@ colaboran:
   - <img src="/content/imgs/img.logo-escuela-filosofia.png" alt="Escuela de Filosofía">
 id_interesado: 4
 id_apuntarme: 8
-published: true
+published: false
 ---
 
 <section>
