@@ -191,14 +191,18 @@
   }
 }
 .delete {
-  width: 73px;
-  height: 67px;
   position: absolute;
   top: -4px;
   left: 0;
   z-index: 10;
   display: inline-block;
-  background: url(../img/aspa.png) 0 0 no-repeat;
+  background: url("../img/sprite2.png") no-repeat;
+  background-position: 0px -64px;
+  text-indent: -99999em;
+  letter-spacing: -999em;
+  overflow: hidden;
+  width: 73px;
+  height: 67px;
 }
 .mostrar-mas {
   margin-bottom: 20px;
@@ -230,7 +234,7 @@
   margin: 0 0 5px 0;
   color: #999999;
   font: 700 36px/38px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: url("../img/sprite1.png") no-repeat;
+  background: url("../img/sprite2.png") no-repeat;
   background-position: 0px 0px;
   text-indent: -99999em;
   letter-spacing: -999em;
@@ -468,7 +472,7 @@
 }
 #footer #copy .logo {
   display: block;
-  background: url("../img/sprite1.png") no-repeat;
+  background: url("../img/sprite2.png") no-repeat;
   background-position: 0px 0px;
   text-indent: -99999em;
   letter-spacing: -999em;

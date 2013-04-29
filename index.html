@@ -38,7 +38,6 @@ published: false
                   </ul>
                   <h2 class="title">{{ post.title }}</h2>
                 </div>
-
                 {% assign profesor_name = post.tags | first %}
                 {% for profesor in site.categories.profesor %}
                   {% if profesor_name == profesor.title %}
