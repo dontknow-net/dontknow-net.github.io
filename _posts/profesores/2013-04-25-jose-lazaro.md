@@ -3,7 +3,7 @@ layout: profesor
 category: profesor
 permalink: /profesor/jose-lazaro
 title: José Lázaro
-cargo: Profesor de Humanidades Médicas, UAM
+cargo: Profesor de Humanidades Médicas en el Departamento de Psiquiatría de la UAM
 entradilla: Dirige también la Fundación Iatrós de Teoría de la Medicina.
 imagen: /content/imgs/jose-lazaro-60.jpg
 twitter:
