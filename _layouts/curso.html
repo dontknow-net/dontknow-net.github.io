@@ -1,23 +1,22 @@
 ---
 layout: layout
 ---
+{% assign en_proceso = false %}
+{% if page.category == 'proceso' %}
+  {% assign en_proceso = true %}
+{% endif %}
+
 {% include share-fb-header.md %}
 {% include header-mini.md %}
-
 <div class="container">
   <div class="row">
     <div class="span8">
       <article class="course well">
         <div class="row-fluid">
-          <div class="span6">
-            <ul class="lista-ambitos inline">
-              <li class="type">{{page.tipo}}</li>
-              <li class="ambito">{{page.ambito}}</li>
-            </ul>
-          </div>
-          <div id="course-date-duration" class="span6">
-            <span class="date">{{page.fecha}}</span>. <span class="duration">{{page.duracion}}</span></div>
-          </div>
+          <ul class="lista-ambitos inline">
+            <li class="type">{{page.tipo}}</li>
+            <li class="ambito">{{page.ambito}}</li>
+          </ul>
           <div id="page-title-wrapper">
             <div id="page-title-container">
               <div class="container">
@@ -157,16 +156,29 @@ layout: layout
       <div class="span4" id="columna-lateral-wrapper">
         <div id="columna-lateral">
           <div class="box-actions">
+            <div id="course-date-duration">
+              <span class="date">{{page.fecha}}</span>.
+              <span class="duration">{{page.duracion}}</span>
+            </div>
             <div class="prices">
               <span class="price">{{ page.precio}} €</span>
             </div>
-            <a href="#modalApuntate" class="open-modal-apuntate btn btn-large btn-primary" role="button" data-id="{{page.id_apuntarme}}" data-toggle="modal"  data-title="{{ page.title | escape}}">Apúntate</a>
-            o <a href="#modalMeInteresa" data-toggle="modal" data-id="{{page.id_interesado}}" class="open-modal-informado" data-title="{{ page.title | escape}}">mantente informado</a>
+            {% if en_proceso %}
+               <a href="#modalMeInteresa" data-toggle="modal" data-id="{{page.id_interesado}}" class="open-modal-informado  btn btn-large btn-primary" role="button"  data-title="{{ page.title | escape}}">Mantente informado</a>
+            {% else %}
+              <a href="#modalApuntate" class="open-modal-apuntate btn btn-large btn-primary" role="button" data-id="{{page.id_apuntarme}}" data-toggle="modal"  data-title="{{ page.title | escape}}">Apúntate</a>
+              o <a href="#modalMeInteresa" data-toggle="modal" data-id="{{page.id_interesado}}" class="open-modal-informado" data-title="{{ page.title | escape}}">mantente informado</a>
+            {% endif %}
         </div>
         <section id="compartir">
           <header class="title">Compártelo</header>
           {% include share.md %}
         </section>
+        {% if en_proceso %}
+          <div class="aviso-en-proceso">
+            Este itinerario está en proceso, su contenido está desarrollándose en este momento. Si tienes algo que aportar al desarrollo de este itinerario <a href="mailto:info@dontknow.net?subject=Comentarios sobre: {{ page.title | escape}}">envíanos tus comentarios</a>.
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>

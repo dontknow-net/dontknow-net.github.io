@@ -1,7 +1,7 @@
 ---
 layout: curso
 title: Ser más creativo en la vida y el trabajo
-fecha: 15 Agosto
+fecha: FECHA AÚN POR DEFINIR
 duracion: 10 semanas
 imagen: /content/imgs/cursos/img.abstracto.jpg
 precio: 250
@@ -73,7 +73,7 @@ published: true
 
 <section>
   <header class="header-section">
-    <h2>Temario</h2>
+    <h2>Temario (en proceso de definición)</h2>
   </header>
   <ol class="unstyled timeline">
     <li class="row-fluid">

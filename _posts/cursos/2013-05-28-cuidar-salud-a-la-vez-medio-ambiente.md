@@ -1,24 +1,27 @@
 ---
 layout: curso
-title: Revisar tus creencias
-fecha: 15 Julio
+title: Cuidar tu salud a la vez que el medio ambiente
+fecha: FECHA AÚN POR DEFINIR
 duracion: 5 semanas
-imagen: /content/imgs/cursos/img.rostro.jpg
-precio: 100
-tipo: Desarrollo personal
-ambito: Religión
+imagen: /content/imgs/cursos/img.naturaleza.jpg
+precio: 35
+tipo: Mejorar la sociedad
+ambito: Paz y convivencia
 category: proceso
 tags:
-  - José Lázaro
+  - Jordi Cussó Porredón
+  - Enrique Baca Baldomero
+  - Fancesc Torralba
+  - Jorge Úbeda
 entradilla: |
   Aprende y debate sobre un tema que apasiona a todos, pero pocos conocen bien.
   Dialoga y define tu postura de manera más consciente y racional.
+id_interesado: 4
+id_apuntarme: 8
 colaboran:
   - <img src="/content/imgs/img.logo-carta-onu.png" alt="Fundación Carta de la Paz dirigida a la ONU">
   - <img src="/content/imgs/img.logo-edificar-paz.png" alt="Edificar la paz en el siglo XXI">
   - <img src="/content/imgs/img.logo-escuela-filosofia.png" alt="Escuela de Filosofía">
-id_interesado: 4
-id_apuntarme: 8
 published: true
 ---
 
@@ -72,7 +75,7 @@ published: true
 
 <section>
   <header class="header-section">
-    <h2>Temario</h2>
+    <h2>Temario (en proceso de definición)</h2>
   </header>
   <ol class="unstyled timeline">
     <li class="row-fluid">
