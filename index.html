@@ -108,28 +108,30 @@ published: false
     </ul>
   </section>
 
-  <section id="courses-future">
-    <header class="header-section">Próximamente</header>
-    <ul class="thumbnails">
-      {% for post in site.categories.futuros %}
-        <li class="span4">
-            <div class="thumbnail">
-              <div class="caption">
-                <ul class="lista-ambitos inline">
-                  <li class="type">{{post.tipo}}</li>
-                  <li class="ambito">{{post.ambito}}</li>
-                </ul>
-                <h2 class="title">{{ post.title }}</h2>
-                <div class="actions">
-                  <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
+  {% if site.categories.futuros | size  > 0 %}
+    <section id="courses-future">
+      <header class="header-section">Próximamente</header>
+      <ul class="thumbnails">
+        {% for post in site.categories.futuros %}
+          <li class="span4">
+              <div class="thumbnail">
+                <div class="caption">
+                  <ul class="lista-ambitos inline">
+                    <li class="type">{{post.tipo}}</li>
+                    <li class="ambito">{{post.ambito}}</li>
+                  </ul>
+                  <h2 class="title">{{ post.title }}</h2>
+                  <div class="actions">
+                    <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
 </div>
 
 <!-- Modal Apuntate -->
