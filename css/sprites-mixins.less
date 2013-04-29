@@ -9,13 +9,13 @@
    background-position: -(@x*@spriteX) -(@y*@spriteY);
 }
 .sprite(@image, @x, @y) when (@image = sprite1){
-   @spriteX: 32px;
-   @spriteY: 32px;
+   @spriteX: 48px;
+   @spriteY: 600px;
    .spriteHelper(@image, @x, @y, @spriteX, @spriteY);
 }
 .sprite(@image, @x, @y) when (@image = sprite2){
-   @spriteX: 128px;
-   @spriteY: 74px;
+   @spriteX: 175px;
+   @spriteY: 64px;
    .spriteHelper(@image, @x, @y, @spriteX, @spriteY);
 }
 
