@@ -160,8 +160,8 @@ layout: layout
             <div class="prices">
               <span class="price">{{ page.precio}} €</span>
             </div>
-            <a href="#modalApuntate" class="open-modal-apuntate btn btn-large btn-primary" role="button" data-id="{{page.id_apuntarme}}" data-toggle="modal">Apúntate</a>
-            o <a href="#modalMeInteresa" data-toggle="modal" data-id="{{page.id_interesado}}" class="open-modal-informado">mantente informado</a>
+            <a href="#modalApuntate" class="open-modal-apuntate btn btn-large btn-primary" role="button" data-id="{{page.id_apuntarme}}" data-toggle="modal"  data-title="{{ page.title | escape}}">Apúntate</a>
+            o <a href="#modalMeInteresa" data-toggle="modal" data-id="{{page.id_interesado}}" class="open-modal-informado" data-title="{{ page.title | escape}}">mantente informado</a>
         </div>
         <section id="compartir">
           <header class="title">Compártelo</header>

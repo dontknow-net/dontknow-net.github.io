@@ -121,7 +121,7 @@ published: false
                   </ul>
                   <h2 class="title">{{ post.title }}</h2>
                   <div class="actions">
-                    <a class="btn btn-primary open-modal-informado" href="#modalMeInteresa" data-id="{{post.id_interesado}}" data-toggle="modal" >Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
+                    <a class="btn btn-primary open-modal-informado" href="#modalMeInteresa" data-id="{{post.id_interesado}}" data-toggle="modal" data-title="{{ post.title | escape}}">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
                   </div>
                 </div>
               </div>
