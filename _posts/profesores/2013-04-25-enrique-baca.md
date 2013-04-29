@@ -9,5 +9,6 @@ imagen: /content/imgs/enrique-baca.jpg
 twitter:
 linkedin:
 dontknow: http://www.dontknow.net/usuario/enrique-baca-baldomero
+published: true
 ---
 Es además jefe del Servicio de Psiquiatría del Hospital Universitario "Puerta de Hierro-Majadahonda" de Madrid.

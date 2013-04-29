@@ -9,7 +9,7 @@ imagen: /content/imgs/jordi-cusso.jpg
 twitter:
 linkedin:
 dontknow: http://www.dontknow.net/usuario/jordi-cusso-porredon
-published: false
+published: true
 ---
 
 Es licenciado en Economía y Teólogo.
