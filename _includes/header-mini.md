@@ -16,7 +16,7 @@
                 <a href="/" class="btn">← Ver itinerarios</a>
               </li>
               <li>
-                <a href="/que-es-dontknow-school-of-life/" class="link">Saber más sobre dksol</a>
+                <a id="saber-mas-header" href="/que-es-dontknow-school-of-life/" class="link">Saber más sobre dksol</a>
               </li>
             </ul>
           </p>
