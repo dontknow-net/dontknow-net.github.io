@@ -122,7 +122,7 @@ published: false
                   </ul>
                   <h2 class="title">{{ post.title }}</h2>
                   <div class="actions">
-                    <a class="btn btn-primary" href="#modalApuntate" data-toggle="modal">Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
+                    <a class="btn btn-primary open-modal-informado" href="#modalMeInteresa" data-id="{{post.id_interesado}}" data-toggle="modal" >Me interesa</a> <a href="#" class="pull-right">colaborar como profesor</a>
                   </div>
                 </div>
               </div>
@@ -134,42 +134,4 @@ published: false
   {% endif %}
 </div>
 
-<!-- Modal Apuntate -->
-<div id="modalApuntate" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="modalApuntateLabel" aria-hidden="true">
-  <form action="http://dontknow.us5.list-manage.com/subscribe/post?u=e7d9eea17d963fd9ca8c597de&amp;id=b2b8a6b95e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" novalidate>
-  <input type="hidden" name="group[16001][1]" id="mce-group[16001]" value="1">
-  <fieldset>
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      <h3 id="modalApuntateLabel">Apúntate</h3>
-    </div>
-    <div class="modal-body">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit mauris eu libero rutrum laoreet. Aliquam vehicula dictum tempor. Quisque egestas tincidunt sem. Suspendisse eget enim nibh, quis pulvinar nulla. Aenean laoreet eros non ante adipiscing quis auctor nisl scelerisque.</p>
-
-      <div class="control-group">
-        <label for="mce-EMAIL" class="control-label">Tu email </label>
-        <div class="controls">
-          <input type="email" value="" name="EMAIL" class="input-xlarge" id="mce-EMAIL">
-        </div>
-      </div>
-      <div class="control-group">
-        <label for="mce-FNAME" class="control-label">Nombre </label>
-        <div class="controls">
-          <input type="text" value="" name="FNAME" class="input-xlarge" id="mce-FNAME">
-        </div>
-      </div>
-      <div class="control-group">
-        <label for="mce-LNAME" class="control-label">Apellidos </label>
-        <div class="controls">
-          <input type="text" value="" name="LNAME" class="input-xlarge" id="mce-LNAME">
-        </div>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
-
-      <input type="submit" value="Apúntate" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-primary">
-    </div>
-  </fieldset>
-</form>
-</div>
+{% include me-interesa.html %}

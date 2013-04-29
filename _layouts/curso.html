@@ -160,8 +160,8 @@ layout: layout
             <div class="prices">
               <span class="price">{{ page.precio}} €</span>
             </div>
-            <a href="#modalApuntate" class="btn btn-large btn-primary" role="button" data-toggle="modal">Apúntate</a>
-            o <a href="#modalApuntate" data-toggle="modal">mantente informado</a>
+            <a href="#modalApuntate" class="open-modal-apuntate btn btn-large btn-primary" role="button" data-id="{{page.id_apuntarme}}" data-toggle="modal">Apúntate</a>
+            o <a href="#modalMeInteresa" data-toggle="modal" data-id="{{page.id_interesado}}" class="open-modal-informado">mantente informado</a>
         </div>
         <section id="compartir">
           <header class="title">Compártelo</header>
@@ -175,7 +175,7 @@ layout: layout
 <!-- Modal Apuntate -->
 <div id="modalApuntate" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="modalApuntateLabel" aria-hidden="true">
   <form action="http://dontknow.us5.list-manage.com/subscribe/post?u=e7d9eea17d963fd9ca8c597de&amp;id=b2b8a6b95e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" novalidate>
-  <input type="hidden" name="group[16001][1]" id="mce-group[16001]" value="1">
+  <input type="hidden" name="group[16001][1]" id="id_mailchimp" value="1">
   <fieldset>
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -212,3 +212,4 @@ layout: layout
 </form>
 </div>
 
+{% include me-interesa.html %}

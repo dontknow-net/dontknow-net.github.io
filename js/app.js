@@ -28,4 +28,13 @@
     $('html,body').animate({scrollTop:$(this.hash).offset().top - 60}, 500);
   });
 
+  $(document).on("click", ".open-modal-apuntate", function () {
+       var idMailchimp = $(this).data('id');
+       $("#modalApuntate #id_mailchimp").attr("name","group[16001][" + idMailchimp + "]");
+  });
+
+  $(document).on("click", ".open-modal-informado", function () {
+       var idMailchimp = $(this).data('id');
+       $("#modalMeInteresa #id_mailchimp2").attr("name","group[16001][" + idMailchimp + "]");
+  });
 }());
