@@ -3,7 +3,7 @@ layout: profesor
 category: profesor
 permalink: /profesor/frances-torralba
 title: Fancesc Torralba
-cargo: Doctor en filosofía, catedrático de ética en la Universidad Ramon Lull de Barcelona
+cargo: Catedrático de ética
 entradilla: Director de la cátedra Ethos de ética aplicada en la Universitat Ramon Llull.
 imagen: /content/imgs/francesc-torralba.jpg
 twitter: f_torralba

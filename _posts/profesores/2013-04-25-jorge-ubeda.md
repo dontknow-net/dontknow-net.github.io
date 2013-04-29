@@ -3,7 +3,7 @@ layout: profesor
 category: profesor
 permalink: /profesor/jorge-ubeda
 title: Jorge Úbeda
-cargo: Doctor en Filosofía. Director académico de la Escuela de Filosofía, Madrid
+cargo: Doctor en Filosofía
 entradilla: Además es Profesor asociado en la Universidad Complutense.
 imagen: /content/imgs/jorge-ubeda.jpg
 twitter: JorgeFilosofo

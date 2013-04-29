@@ -3,7 +3,7 @@ layout: profesor
 category: profesor
 permalink: /profesor/jordi-cusso
 title: Jordi Cussó Porredón
-cargo: Economista, director de la Universitas Albertiana de Barcelona
+cargo: Economista
 entradilla: Es tutor del Posgrado en Cultura de Paz y Convivencia Social que lleva a cabo la Fundación Carta de la Paz junto a la Universidad de Barcelona.
 imagen: /content/imgs/jordi-cusso.jpg
 twitter:
