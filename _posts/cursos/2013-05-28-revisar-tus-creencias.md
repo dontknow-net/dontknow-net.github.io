@@ -24,7 +24,7 @@ published: true
 
 <section>
   <header>
-    <h2>Para qué te servirá este itinerario</h2>
+    <h2>Para qué te servirá este itinerario a ti</h2>
   </header>
   <ol>
     <li>Para opinar con más bases sobre un tema del que muchos hablan sin conocerlo</li>
