@@ -73,6 +73,16 @@ layout: layout
           </div>
           <hr>
 
+          {% if page.colaboran != empty %}
+            <div id="logos-peque" class="row">
+              {% for colabora in page.colaboran %}
+                <div class="span3 logo">
+                  {{colabora}}
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+
           {{content}}
 
           <section id="teachers">
@@ -144,9 +154,9 @@ layout: layout
               <header class="header-section">
                 <h2>Organizaciones que colaboran</h2>
               </header>
-              <div id="logos">
+              <div id="logos" class="row">
                 {% for colabora in page.colaboran %}
-                  <div class="logo">
+                  <div class="span3 logo">
                     {{colabora}}
                   </div>
                 {% endfor %}
