@@ -4,7 +4,7 @@ title: Revisar tus creencias
 fecha: FECHA AÚN POR DEFINIR
 duracion: 5 semanas
 imagen: /content/imgs/cursos/img.rostro.jpg
-precio: 31
+precio: 30
 tipo: Desarrollo personal
 ambito: Religión
 category: proceso
