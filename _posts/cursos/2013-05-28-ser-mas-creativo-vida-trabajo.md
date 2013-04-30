@@ -4,7 +4,7 @@ title: Ser más creativo en la vida y el trabajo
 fecha: FECHA AÚN POR DEFINIR
 duracion: 10 semanas
 imagen: /content/imgs/cursos/img.abstracto.jpg
-precio: 250
+precio: 30
 tipo: Desarrollo personal
 ambito: Trabajo
 category: proceso
