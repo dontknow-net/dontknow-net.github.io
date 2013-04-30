@@ -31,7 +31,7 @@ published: true
   </header>
   <ol>
     <li>Para opinar con más bases sobre un tema del que muchos hablan sin conocerlo</li>
-    <li>Para entender mejor los motivos de las personas que están a favor y en contra.</li>
+    <li>Para entender mejor los motivos de las personas que están a favor y en contra</li>
     <li>Acceder a información confiable y formarte tu punto de vista, en vez de asumir como cierta cualquier cosa</li>
     <li>Contribuir al diálogo social, frenando la difusión de prejuicios que pueden provocar conflictos mayores</li>
   </ol>
