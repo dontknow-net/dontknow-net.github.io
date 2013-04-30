@@ -65,7 +65,6 @@
   font:700 24px/32px @sansFontFamily;
   color: @white;
   text-shadow: -1px -1px rgba(0,0,0,0.3);
-  .border-radius(3px);
 }
 .price-free{
   font:400 24px/32px @handFontFamily;
@@ -207,9 +206,9 @@
 
 // Titulos de seccion
 .header-section{
-  width: 200px;
+  max-width: 260px;
   margin: -10px auto 20px auto;
-  padding:5px 0 7px 0;
+  padding:5px 10px 7px 10px;
   position: relative;
   font:700 16px/18px @sansFontFamily;
   text-align: center;
@@ -219,7 +218,7 @@
   .border-radius(4px);
   &:after{
     position:absolute;
-    left: 92px;
+    left: 48%;
     right:auto;
     top:auto;
     bottom:-12px;
@@ -285,7 +284,6 @@
       position: absolute;
       top:70px;
       right: 0px;
-      .border-radius(4px 0 0 4px);
       @media (min-width: 768px) and (max-width: 979px) { // tablet
         top:30px;  
       }
@@ -338,7 +336,6 @@
 
 #course-date-duration{
   text-transform: uppercase;
-  text-align: right;
 }
 
 // Duracion
@@ -525,17 +522,29 @@
   }
   .box-actions{
     margin:0 0 20px -21px;
-    padding:20px 0 20px 20px;
+    padding:20px;
     background: saturate(#E8EFE0, 25%);
     border:1px solid @grayLighter;
     @media (min-width: 1200px) { // Large desktop
       margin-left:-31px;
-      padding-left:20px 0 20px 30px;
+      padding:20px 20px 20px 30px;
     }
     .prices{
-      margin-bottom: 15px;
+      margin: 0 0 5px 0;
+      .price{
+        padding: 0;
+        font:700 36px/36px @sansFontFamily;
+        color: @btnSuccessBackgroundHighlight;
+        text-shadow: none;
+        background: none;
+      }
     }
   }
+}
+
+// Aviso
+.aviso-en-proceso{
+  font:400 12px/18px @sansFontFamily;
 }
 
 // Compartir

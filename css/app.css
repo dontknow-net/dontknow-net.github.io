@@ -177,9 +177,6 @@
   font: 700 24px/32px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
   text-shadow: -1px -1px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
 }
 .price-free {
   font: 400 24px/32px 'Shadows Into Light Two', cursive;
@@ -348,9 +345,9 @@
   text-align: left;
 }
 .header-section {
-  width: 200px;
+  max-width: 260px;
   margin: -10px auto 20px auto;
-  padding: 5px 0 7px 0;
+  padding: 5px 10px 7px 10px;
   position: relative;
   font: 700 16px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
@@ -363,7 +360,7 @@
 }
 .header-section:after {
   position: absolute;
-  left: 92px;
+  left: 48%;
   right: auto;
   top: auto;
   bottom: -12px;
@@ -426,9 +423,6 @@
   position: absolute;
   top: 70px;
   right: 0px;
-  -webkit-border-radius: 4px 0 0 4px;
-  -moz-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .thumbnails .thumbnail .price {
@@ -488,7 +482,6 @@
 }
 #course-date-duration {
   text-transform: uppercase;
-  text-align: right;
 }
 .course-duration {
   margin: 0 0 10px 0;
@@ -691,18 +684,28 @@
 }
 #columna-lateral .box-actions {
   margin: 0 0 20px -21px;
-  padding: 20px 0 20px 20px;
+  padding: 20px;
   background: #e8f5da;
   border: 1px solid #dddddd;
 }
 @media (min-width: 1200px) {
   #columna-lateral .box-actions {
     margin-left: -31px;
-    padding-left: 20px 0 20px 30px;
+    padding: 20px 20px 20px 30px;
   }
 }
 #columna-lateral .box-actions .prices {
-  margin-bottom: 15px;
+  margin: 0 0 5px 0;
+}
+#columna-lateral .box-actions .prices .price {
+  padding: 0;
+  font: 700 36px/36px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #51a351;
+  text-shadow: none;
+  background: none;
+}
+.aviso-en-proceso {
+  font: 400 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #compartir .title {
   margin-bottom: 7px;

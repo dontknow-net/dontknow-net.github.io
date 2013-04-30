@@ -35,7 +35,7 @@ layout: layout
               {% for profesor in site.categories.profesor %}
                 {% if tag == profesor.title %}
                   {% if primero == true %}
-                    <div class="span6">
+                    <div class="span5">
                       <div class="firma">
                         <div class="user-picture">
                           <img src="{{profesor.imagen}}" alt="{{profesor.title}}">
@@ -45,7 +45,7 @@ layout: layout
                         {{profesor.cargo}}
                       </div>
                     </div>
-                    <div class="span6">
+                    <div class="span7">
                       <div class="row-fluid">
                   {% else %}
                     {% if es_par  == 0 and index > 2%}
@@ -165,6 +165,7 @@ layout: layout
             <div class="prices">
               <span class="price">{{ page.precio}} €</span>
             </div>
+
             {% if en_proceso %}
                <a href="#modalMeInteresa" data-toggle="modal" data-id="{{page.id_interesado}}" class="open-modal-informado  btn btn-large btn-primary" role="button"  data-title="{{ page.title | escape}}">Mantente informado</a>
             {% else %}
