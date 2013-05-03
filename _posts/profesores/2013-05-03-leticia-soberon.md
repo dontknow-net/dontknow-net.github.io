@@ -1,15 +1,15 @@
 ---
 layout: profesor
 category: profesor
-permalink: /profesor/nombre-profesor
-title: Nombre del profesor
-cargo: Cargo del profesor
-entradilla: Este es el texto que sale en el snippet del profesor cuando es colaborador
-imagen: /content/imgs/nombre-profesor.jpg
-twitter: cuenta de twitter (sin url)
-linkedin: http://www.linkedin.com/url-del-usuario (si no tiene dejar en blanco)
-dontknow: http://www.dontknow.net/usuario/url-del-usuario (si no tiene dejar en blanco)
-published: true
+permalink: /profesor/leticia-soberon
+title: Leticia Soberón
+cargo: Psicóloga y Doctora en Ciencias Sociales.
+entradilla: Psicóloga, doctora en comunicaciones especializada en inteligencia conectiva, tutora de un post-grado sobre la paz en la Universidad de Barcelona.
+imagen: /content/imgs/leticia-soberon.jpg
+twitter:
+linkedin:
+dontknow: http://www.dontknow.net/usuario/leticia-soberon
+published: false
 
 ---
 
