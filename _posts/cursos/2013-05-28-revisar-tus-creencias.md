@@ -24,10 +24,12 @@ published: true
     <h2>Para qué te servirá este itinerario a ti</h2>
   </header>
   <ol>
-    <li>Para opinar con más bases sobre un tema del que muchos hablan sin conocerlo</li>
-    <li>Para entender mejor los motivos de las personas que están a favor y en contra.</li>
-    <li>Acceder a información confiable y formarte tu punto de vista, en vez de asumir como cierta cualquier cosa</li>
-    <li>Contribuir al diálogo social, frenando la difusión de prejuicios que pueden provocar conflictos mayores</li>
+    <li>Comprender qué significa “creer” en algo</li>
+    <li>Comprender por qué a veces defiendes ideas que has asumido sin darte cuenta</li>
+    <li>Valorar los riesgos de que las ideas te empujen a la confrontación y la violencia</li>
+    <li>Aprender a participar en grupos de creyentes de manera responsable</li>
+    <li>Revisar el fundamento de tus creencias y volver a asumir las que consideres válidas</li>
+    <li>Vivir las creencias que decidas tener, de manera respetuosa con las de otros</li>
   </ol>
 </section>
 <hr>
