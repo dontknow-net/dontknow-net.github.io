@@ -10,13 +10,10 @@ ambito: Religión
 category: proceso
 tags:
   - José Lázaro
+  - Leticia Soberón
 entradilla: |
-  Aprende y debate sobre un tema que apasiona a todos, pero pocos conocen bien.
-  Dialoga y define tu postura de manera más consciente y racional.
+  No te dejes llevar por cualquier opinión. Toma las riendas de tu pensamiento.
 colaboran:
-  - <img src="/content/imgs/img.logo-carta-onu.png" alt="Fundación Carta de la Paz dirigida a la ONU">
-  - <img src="/content/imgs/img.logo-edificar-paz.png" alt="Edificar la paz en el siglo XXI">
-  - <img src="/content/imgs/img.logo-escuela-filosofia.png" alt="Escuela de Filosofía">
 id_interesado: 4
 id_apuntarme: 8
 published: true
