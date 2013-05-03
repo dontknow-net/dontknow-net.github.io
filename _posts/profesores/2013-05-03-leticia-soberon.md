@@ -5,7 +5,7 @@ permalink: /profesor/leticia-soberon
 title: Leticia Soberón
 cargo: Psicóloga y Doctora en Ciencias Sociales.
 entradilla: Psicóloga, doctora en comunicaciones especializada en inteligencia conectiva, tutora de un post-grado sobre la paz en la Universidad de Barcelona.
-imagen: /content/imgs/leticia-soberon.jpg
+imagen: /content/imgs/leticia-soberon-110.jpg
 twitter:
 linkedin:
 dontknow: http://www.dontknow.net/usuario/leticia-soberon
