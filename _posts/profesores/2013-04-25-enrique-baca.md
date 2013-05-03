@@ -13,5 +13,3 @@ published: true
 ---
 
 Es además jefe del Servicio de Psiquiatría del Hospital Universitario "Puerta de Hierro-Majadahonda" de Madrid.
-
-![perricos](http://farm9.staticflickr.com/8263/8702031518_546db62bbc_m.jpg)
