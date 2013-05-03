@@ -61,7 +61,6 @@
   padding: 10px 15px;
   display: inline-block;
   position: relative;
-  #gradient > .vertical(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
   font:700 24px/32px @sansFontFamily;
   color: @white;
   text-shadow: -1px -1px rgba(0,0,0,0.3);
@@ -91,12 +90,73 @@
 
 // Contenido principal
 #primary-content{
+  background-color: #323232;
+  background-image:url(../img/bk.primary.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+  .box-shadow(1px 0px 20px 1px @gray);
   @media (max-width: 767px){ // mobile
     margin: 0 -20px;
     padding: 0 20px;
   }
-  #gradient > .vertical(#333, #303030);
-  .box-shadow(1px 0px 20px 1px @gray);
+  #deepbanner{
+    padding: 5px 0 20px 0;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image:url(../img/bk.deepbanner-v1.jpg);
+    .background-size(contain);
+    .span6{
+      width: 800px;
+    }       
+    h2{
+      margin-top: 0px;
+      font: 700 30px/32px @sansFontFamily;
+      color: @white;
+      text-shadow: 2px 2px rgba(0,0,0,.3);
+      span{
+        display: block;
+      }
+    }
+    .lead{
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 28px;
+      color: lighten(@grayLighter, 15%);
+      text-shadow: 2px 2px rgba(0,0,0,.3);
+    }
+    @media (min-width: 1200px) { // Large desktop
+      .span6{
+        width: 570px;
+      }
+      h2{
+        font: 700 40px/42px @sansFontFamily;
+      }
+    }
+    @media (max-width: 979px) { // Portrait tablet to landscape and desktop + Landscape phone to portrait tablet
+      .span6{
+        width: auto;
+      }
+      h2{
+        margin-top: 0px;
+        font: 700 22px/24px @sansFontFamily;
+        span{
+          display: inline;
+        }
+      }
+      .lead{
+        display: none;
+      }
+    }
+    @media (max-width: 767px) { // Landscape phone to portrait tablet
+      position: relative;
+      background-image:none;
+      .btn{
+        position: absolute;
+        top:20px;
+        right: 0;
+      }
+    }
+  }
   // Cabecera
   #header{
     padding: 7px 0 0 0;
@@ -197,8 +257,23 @@
   &.inner{
     margin-bottom: 20px;
     #header{
+      position: relative;
+      .title{
+        margin-right: 20px;
+        float: left;
+      }
       .subtitle{
         text-align: left;
+        @media (max-width: 979px){ // tablet vertical + mobile
+          display: none;
+        }
+      }
+      #saber-mas-header{
+        @media (max-width: 479px){ // mobile horizontal
+          position: absolute;
+          right: 0;
+          bottom:17px;
+        }
       }
     }
   }
@@ -284,6 +359,7 @@
       position: absolute;
       top:70px;
       right: 0px;
+      #gradient > .vertical(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
       @media (min-width: 768px) and (max-width: 979px) { // tablet
         top:30px;  
       }
@@ -341,16 +417,23 @@
 // Duracion
 .course-duration{
   margin: 0 0 10px 0;
-  font:400 14px/16px @sansFontFamily;
+  font:400 11px/16px @sansFontFamily;
   text-transform: uppercase;
   text-align: center;
   .clearfix();
+  @media (min-width: 1200px) { // Large desktop
+    font-size:14px;  
+  }
   .circle{
-    width: 100px;
-    height: 100px;
-    margin: 0 15px 0 0; 
+    width: 80px;
+    height: 80px;
+    margin: 0 10px 0 0; 
     display: table;
     float: left;
+    @media (min-width: 1200px) { // Large desktop
+      width: 100px;
+      height: 100px;  
+    }
     .cell{
       display: table-cell;
       vertical-align: middle;
@@ -371,7 +454,10 @@
   .row-fluid{
     margin-bottom: 20px;
     .spriteHelper(sprite1, 1, 1, 0, 0);
-    background-position: 129px bottom;
+    background-position: 102px bottom;
+    @media (min-width: 1200px) { // Large desktop
+      background-position: 129px bottom;  
+    }
     &:last-child{
       background: none;
     }
@@ -389,8 +475,8 @@
   .number{
     display: table;    
     .cell{
-      width: 34px;
-      height: 34px;
+      width: 27px;
+      height: 27px;
       display: table-cell;
       vertical-align: middle;
       text-align: center;
@@ -399,6 +485,10 @@
       border:5px solid lighten(@linkColor, 30%);
       background-color: @white;
       .border-radius(22px);
+      @media (min-width: 1200px) { // Large desktop
+        width: 34px;
+        height: 34px;
+      }
     }
   }
   .title{
@@ -410,7 +500,7 @@
 // Info del curso
 #info-course-online{
   .title{
-    margin-top: 20px;
+    margin-top: 15px;
     font:400 26px/30px @handFontFamily;
   }
   ul{
@@ -536,7 +626,6 @@
         font:700 36px/36px @sansFontFamily;
         color: @btnSuccessBackgroundHighlight;
         text-shadow: none;
-        background: none;
       }
     }
   }
@@ -575,11 +664,30 @@
 }
 
 // Logos Colaboradores
-#logos{
-  width: 100%;
-  display: table;
+#logos,
+#logos-peque{
   .logo{
-    display: table-cell;
     vertical-align: middle;
+    text-align: center;
+  }
+}
+#logos{
+  .logo{
+    height: 100px;
+    line-height: 100px;
+    img{
+      max-height: 100px; 
+    }
+  }
+}
+#logos-peque{
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  .logo{
+    height: 50px;
+    line-height: 50px;
+    img{
+      max-height: 50px; 
+    }
   }
 }

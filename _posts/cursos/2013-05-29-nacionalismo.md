@@ -36,7 +36,6 @@ published: true
     <li>Contribuir al diálogo social, frenando la difusión de prejuicios que pueden provocar conflictos mayores</li>
   </ol>
 </section>
-<hr>
 
 <section id="info-course-online">
   <header>

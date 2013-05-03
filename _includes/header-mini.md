@@ -2,14 +2,10 @@
     <div class="container">
       <header id="header">
         <div class="row">
-          <div class="span2">
+          <div class="span9">
             <a href="/"><div class="title hideText">Dontknow School of Life</div></a>
+            <p class="subtitle">Itinerarios formativos que mejoran tu vida</p>
           </div>
-          <hgroup>
-            <div class="span7">
-              <p class="subtitle">Itinerarios formativos que mejoran tu vida</p>
-            </div>
-          </hgroup>
           <div class="span3">
             <ul class="header-actions unstyled">
               <li>

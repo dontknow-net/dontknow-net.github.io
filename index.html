@@ -7,21 +7,29 @@ published: false
 
 <section id="primary-content">
   <div class="container">
-    <header id="header">
+    <section id="deepbanner">
+      <header id="header">
+        <h1 class="title hideText">Dontknow School of Life</h1>
+      </header>
       <div class="row">
-        <div class="span3">
-          <h1 class="title hideText">Dontknow School of Life</h1>
+        <div class="span6">
+          <h2><span>Itinerarios formativos</span> <span>que mejoran tu vida</span></h2>
+          <p class="lead">Dontknow school of life te ofrece formación online para tu desarrollo vital en el plano individual y colectivo: amor y relaciones, trabajo, salud, familia, democracia, paz...</p>
+          <a class="btn btn-primary" href="/que-es-dontknow-school-of-life/">Saber más</a>
         </div>
-        <hgroup>
-          <div class="span9">
-            <h2 class="subtitle">Itinerarios formativos que mejoran tu vida</h2>
-          </div>
-        </hgroup>
       </div>
-    </header>
+    </section>
+
+
+
+
+
+
+
+
 
     {% for post in site.categories.new %}
-      <a href="{{ post.url }}" class="block-link">
+      <a href="{{ post.url }}" class="block-link" style="display:none;">
         <section class="course well">
           <div class="row-fluid">
             <div class="span4">
