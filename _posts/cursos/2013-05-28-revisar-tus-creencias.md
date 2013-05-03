@@ -96,7 +96,7 @@ published: true
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date">Fecha por definir</div>
+      <div class="span2 date"> </div>
       <div class="span1 number">
         <span class="cell">3</span>
       </div>
@@ -117,7 +117,7 @@ y a la violencia, al infantilismo o al dominio sobre otros.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date">Fecha por definir</div>
+      <div class="span2 date"> </div>
       <div class="span1 number">
         <span class="cell">5</span>
       </div>
@@ -138,7 +138,7 @@ responsable a los grupos de creyentes.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date">Fecha por definir</div>
+      <div class="span2 date"> </div>
       <div class="span1 number">
         <span class="cell">7</span>
       </div>
@@ -158,7 +158,8 @@ no hemos tomado conciencia pero que nos marcan en la vida cotidiana.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span1 number offset2">
+      <div class="span2 date"> </div>
+      <div class="span1 number">
         <span class="cell">9</span>
       </div>
       <div class="span9 well">
@@ -178,7 +179,8 @@ sociedad, la política y los que no piensan como nosotros.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span1 number offset2">
+      <div class="span2 date"> </div>
+      <div class="span1 number">
         <span class="cell">11</span>
       </div>
       <div class="span9 well">
