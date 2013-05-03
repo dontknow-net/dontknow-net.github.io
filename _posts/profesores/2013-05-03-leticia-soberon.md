@@ -9,7 +9,7 @@ imagen: /content/imgs/leticia-soberon.jpg
 twitter:
 linkedin:
 dontknow: http://www.dontknow.net/usuario/leticia-soberon
-published: false
+published: true
 
 ---
 
