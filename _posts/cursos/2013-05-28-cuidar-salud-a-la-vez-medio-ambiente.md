@@ -7,7 +7,7 @@ imagen: /content/imgs/cursos/img.naturaleza.jpg
 precio: 35
 tipo: Mejorar la sociedad
 ambito: Paz y convivencia
-category: proceso
+category: futuros
 tags:
   - Jordi Cussó Porredón
   - Enrique Baca Baldomero

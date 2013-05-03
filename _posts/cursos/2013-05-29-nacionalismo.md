@@ -7,7 +7,7 @@ imagen: /content/imgs/cursos/img.rostro-panuelo.jpg
 precio: 30
 tipo: Mejorar la sociedad
 ambito: Paz y convivencia
-category: new
+category: proceso
 tags:
   - Jordi Cussó Porredón
   - Enrique Baca Baldomero

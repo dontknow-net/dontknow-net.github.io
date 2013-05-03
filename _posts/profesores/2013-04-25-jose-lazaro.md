@@ -3,14 +3,17 @@ layout: profesor
 category: profesor
 permalink: /profesor/jose-lazaro
 title: José Lázaro
-cargo: Profesor de Humanidades Médicas de la UAM
-entradilla: Dirige también la Fundación Iatrós de Teoría de la Medicina.
+cargo: Doctor en medicina
+entradilla: Profesor de Humanidades médicas en la UAM. Prolífico escritor y humanista
 imagen: /content/imgs/jose-lazaro-60.jpg
 twitter:
 linkedin:
 dontknow: http://www.dontknow.net/usuario/jorge-ubeda
 published: true
 ---
+
+Profesor de Humanidades médicas en la UAM. Prolífico
+escritor y humanista.
 
 Dirige también la Fundación Iatrós de Teoría de la Medicina.
 
