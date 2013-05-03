@@ -10,6 +10,8 @@ ambito: Religión
 category: proceso
 tags:
   - José Lázaro
+  - Enrique Baca Baldomero
+  - José Luis Gonzalez Quirós
   - Leticia Soberón
 entradilla: |
   No te dejes llevar por cualquier opinión. Toma las riendas de tu pensamiento.
