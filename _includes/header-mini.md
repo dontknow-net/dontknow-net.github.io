@@ -15,9 +15,11 @@
               <li>
                 <a href="/" class="btn">← Ver itinerarios</a>
               </li>
-              <li>
-                <a id="saber-mas-header" href="/que-es-dontknow-school-of-life/" class="link">Saber más sobre dksol</a>
-              </li>
+              {% if page.saber-mas != true %}
+                <li>
+                  <a id="saber-mas-header" href="/que-es-dontknow-school-of-life/" class="link">Saber más sobre dksol</a>
+                </li>
+              {% endif %}
             </ul>
           </p>
         </div>
