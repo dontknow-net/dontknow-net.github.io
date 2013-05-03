@@ -75,13 +75,13 @@ published: true
   </header>
   <ol class="unstyled timeline">
     <li class="row-fluid">
-      <div class="span2 date">15 Junio</div>
+      <div class="span2 date">Fecha por definir</div>
       <div class="span1 number">
         <span class="cell">1</span>
       </div>
       <div class="span9 well">
-        <h3 class="title">Por qué es importante tener un punto de vista serio sobre nacionalismo</h3>
-        <p>En un tema que levanta pasiones, y opinar sin fundamento o con prejuicios es la peor contribución al diálogo. Nos jugamos mucho en ello.</p>
+        <h3 class="title">Por qué es importante revisar mis creencias.</h3>
+        <p>Para clarificar nuestra mente, donde a veces se confunden todo tipo de ideas sobre las que no hemos reflexionado y que nos impulsan a actuar.</p>
       </div>
     </li>
     <li class="row-fluid">
@@ -89,18 +89,19 @@ published: true
         <span class="cell">2</span>
       </div>
       <div class="span9 well">
-        <h3 class="title">De qué hablamos cuando hablamos de "nacionalismo"</h3>
-        <p>El primer paso de todo diálogo es que todos entiendan del mismo modo cada palabra. En este tema las palabras se usan de manera confusa y conviene clarificarlas antes de seguir.</p>
+        <h3 class="title">De qué hablamos cuando decimos “creencias”.</h3>
+        <p>Para no confundir entre las convicciones que tienen algún fundamento y las que nunca vamos a poder comprobar.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date">17 Junio</div>
+      <div class="span2 date">Fecha por definir</div>
       <div class="span1 number">
         <span class="cell">3</span>
       </div>
       <div class="span9 well">
-        <h3 class="title">Qué nos lleva a discutir sobre nacionalismo: motivos históricos, culturales, políticos, económicos...</h3>
-        <p>Las personas tienen motivos, además de fuertes emociones, que impulsan sus posturas sobre temas de nacionalismo. Conocer esos motivos nos ayudará a entendernos mejor unos a otros.</p>
+        <h3 class="title">Cómo se forman. Las creencias en la construcción de la identidad colectiva.</h3>
+        <p>Para entender el origen de nuestras ideas sobre el mundo, que hemos
+aprendido del grupo social al que pertenecemos.</p>
       </div>
     </li>
     <li class="row-fluid">
@@ -108,18 +109,20 @@ published: true
         <span class="cell">4</span>
       </div>
       <div class="span9 well">
-        <h3 class="title">Qué nos lleva a discutir sobre nacionalismo: el proceso de construcción de la identidad colectiva a partir de la oposición</h3>
-        <p>Conoceremos mejor la manera como construimos nuestra identidad personal (quién soy) y nuestras identidades colectivas (mi nacionalidad y grupos a los que pertenezco).</p>
+        <h3 class="title">La violencia de los fanáticos y otras perversiones de la creencia.</h3>
+        <p>Para distinguir cuándo la forma de creer nos puede llevar a la confrontación
+y a la violencia, al infantilismo o al dominio sobre otros.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date">19 Junio</div>
+      <div class="span2 date">Fecha por definir</div>
       <div class="span1 number">
         <span class="cell">5</span>
       </div>
       <div class="span9 well">
-        <h3 class="title">Riesgos de las disputas nacionalistas</h3>
-        <p>La ligereza con que a veces difundimos prejuicios, tópicos, descalificaciones e ideas sin fundamento, es peligrosa. La crispación puede llegar a romper el tejido de las familias y la sociedad y generar violencia.</p>
+        <h3 class="title">Necesitamos creencias, pero revisadas. De “creyente” a “dudante” (que no indeciso).</h3>
+        <p>Analizar nuestras creencias para pensar por nosotros mismos y no
+simplemente dejándonos llevar.</p>
       </div>
     </li>
     <li class="row-fluid">
@@ -127,18 +130,20 @@ published: true
         <span class="cell">6</span>
       </div>
       <div class="span9 well">
-        <h3 class="title">Aceptar la historia, aceptarme a mí y a los demás: el primer paso</h3>
-        <p>Pocas veces tomamos conciencia de la carga histórica que hay en muchas de nuestras opiniones. Es importante releer la historia de manera más racional y crítica.</p>
+        <h3 class="title">Creer en grupo: pertenencia responsable.</h3>
+        <p>Casi nadie tiene creencias en solitario. Para pertenecer de manera
+responsable a los grupos de creyentes.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date">22 Junio</div>
+      <div class="span2 date">Fecha por definir</div>
       <div class="span1 number">
         <span class="cell">7</span>
       </div>
       <div class="span9 well">
-        <h3 class="title">¿Y cuál es mi identidad? Hacia las identidades porosas. La riqueza de la diversidad</h3>
-        <p>Un paso más en el itinerario: la posibilidad de tratar a otras personas con identidades colectivas diversas. Asomarnos a la riqueza que puede haber en la diversidad.</p>
+        <h3 class="title">Creencias personales.</h3>
+        <p>Para analizar las ideas sobre nosotros mismos y sobre los demás, de las que
+no hemos tomado conciencia pero que nos marcan en la vida cotidiana.</p>
       </div>
     </li>
     <li class="row-fluid">
@@ -155,8 +160,39 @@ published: true
         <span class="cell">9</span>
       </div>
       <div class="span9 well">
-        <h3 class="title">De la deconstrucción del enemigo a la construcción del amigo: ¿qué podemos hacer colectivamente?</h3>
-        <p>El itinerario culmina en posibles acciones que podemos emprender con otros para un mayor diálogo social más racional y respetuoso. La intención no es llegar a soluciones únicas, ni a alcanzar consensos. Sólo a abrir puertas para que los participantes encuentren sus pistas de acción.</p>
+        <h3 class="title">Creencias religiosas y sobre el universo.</h3>
+        <p>Para tomar conciencia de lo que pensamos sobre el origen del mundo,
+sobre el ser absoluto y el sentido de la vida.</p>
+      </div>
+    </li>
+    <li class="row-fluid">
+      <div class="span1 number offset2">
+        <span class="cell">10</span>
+      </div>
+      <div class="span9 well">
+        <h3 class="title">Creencias políticas.</h3>
+        <p>Para tomar conciencia de lo que pensamos sobre la manera de organizar la
+sociedad, la política y los que no piensan como nosotros.</p>
+      </div>
+    </li>
+    <li class="row-fluid">
+      <div class="span1 number offset2">
+        <span class="cell">11</span>
+      </div>
+      <div class="span9 well">
+        <h3 class="title">Creencias sociales y económicas.</h3>
+        <p>Para tomar conciencia de nuestro modo de entender la vida económica y
+laboral, las clases sociales y su relación.</p>
+      </div>
+    </li>
+    <li class="row-fluid">
+      <div class="span1 number offset2">
+        <span class="cell">12</span>
+      </div>
+      <div class="span9 well">
+        <h3 class="title">¿Transmitir mis creencias? ¿Combatir las ajenas?</h3>
+        <p>Para ser una persona que viva sus convicciones y creencias porque así lo ha
+decidido, de manera respetuosa con las de otros.</p>
       </div>
     </li>
   </ol>
