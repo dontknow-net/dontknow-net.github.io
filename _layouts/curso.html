@@ -68,7 +68,7 @@ layout: layout
             </div>
           </div>
         </div>
-        {% if page.colaboran != empty %}
+        {% if page.colaboran | size  > 0 %}
         <div id="logos-peque" class="row-fluid">
           {% for colabora in page.colaboran %}
           <div class="span4 logo">
@@ -141,7 +141,7 @@ layout: layout
             </div>
           </div>
         </section>
-        {% if page.colaboran != empty %}
+        {% if page.colaboran | size  > 0 %}
         <section>
           <header class="header-section">
             <h2>Organizaciones que colaboran</h2>
