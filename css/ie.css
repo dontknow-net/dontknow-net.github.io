@@ -8,5 +8,11 @@
 }
 .course-duration .circle .cell {
   border: none;
-  background: url(../img/bk.circle.png) top left no-repeat;
+  background: url(../img/ie/bk.circle.png) top left no-repeat;
+}
+.timeline .number .cell {
+  width: 37px;
+  height: 37px;
+  border: none;
+  background: url(../img/ie/bk.circle.small.png) top left no-repeat;
 }

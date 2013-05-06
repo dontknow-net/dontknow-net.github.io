@@ -100,7 +100,7 @@
     padding: 0 20px;
   }
   #deepbanner{
-    padding: 5px 0 20px 0;
+    padding: 5px 0 15px 0;
     background-repeat: no-repeat;
     background-position: top right;
     .background-size(contain);
@@ -112,41 +112,32 @@
     }
     &.db3{
       background-image:url(../img/bk.deepbanner-v3.jpg);  
-    }
-    .span6{
-      width: 800px;
-    }       
+    }     
     h2{
       margin-top: 0px;
-      font: 700 30px/32px @sansFontFamily;
+      font: 400 36px/40px @handFontFamily;
       color: @white;
+      letter-spacing: 1px;
       text-shadow: 2px 2px rgba(0,0,0,.3);
-      span{
-        display: block;
-      }
     }
     .lead{
-      margin-bottom: 10px;
+      margin:0 380px 10px 0;
       font-size: 20px;
       line-height: 28px;
-      color: lighten(@grayLighter, 15%);
+      color: @white;
       text-shadow: 2px 2px rgba(0,0,0,.3);
     }
     @media (min-width: 1200px) { // Large desktop
-      .span6{
-        width: 570px;
-      }
       h2{
-        font: 700 40px/42px @sansFontFamily;
+        font-size:40px;
+        line-height:42px;
       }
     }
     @media (max-width: 979px) { // Portrait tablet to landscape and desktop + Landscape phone to portrait tablet
-      .span6{
-        width: auto;
-      }
       h2{
         margin-top: 0px;
-        font: 700 22px/24px @sansFontFamily;
+        font-size:22px;
+        line-height:24px;
         span{
           display: inline;
         }
@@ -157,7 +148,11 @@
     }
     @media (max-width: 767px) { // Landscape phone to portrait tablet
       position: relative;
-      background-image:none;
+      &.db1,
+      &.db2,
+      &.db3{
+        background-image: none;
+      }
       .btn{
         position: absolute;
         top:20px;
@@ -325,6 +320,43 @@
 
 // Thumbnails clickables
 .block-link{
+  .thumbnail{
+    .photo{
+      position: relative;
+      img{
+        @media (max-width: 767px) { // Landscape phone to portrait tablet
+          width: 100%;
+        }
+      }
+      .price{
+        margin:0;
+        position: absolute;
+        top:70px;
+        right: 0px;
+        #gradient > .vertical(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
+        @media (min-width: 768px) and (max-width: 979px) { // tablet
+          top:30px;  
+        }
+        @media (max-width: 767px) { // Landscape phone to portrait tablet
+          top:50px;
+        }
+        @media (max-width: 480px) { // Landscape phones and down
+          top:25px;
+        }
+      }
+    }
+    .caption{
+      background: @white;
+      @media (max-width: 767px) { // Landscape phone to portrait tablet
+        margin-top: -100px;
+        position: relative;
+        z-index: 100;
+      }
+      @media (max-width: 480px) { // Landscape phones and down
+        margin-top: -50px;
+      }  
+    }   
+  }
   &:hover{
     .thumbnail{
       margin: -5px;
@@ -353,45 +385,27 @@
   li:nth-child(3n+1){
     clear:both;
   }
-  .thumbnail{
-    .photo{
-      position: relative;
-    }
-    .title{
-      margin-top: 0;
-      margin-bottom: 15px;
-      font:700 20px/22px @sansFontFamily;
-    }
-    .price{
-      margin:0;
-      position: absolute;
-      top:70px;
-      right: 0px;
-      #gradient > .vertical(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
-      @media (min-width: 768px) and (max-width: 979px) { // tablet
-        top:30px;  
-      }
-      @media (max-width: 767px) { // mobile
-        left:0;
-        right: auto;
-        .border-radius(0 4px 4px 0);
-      }
-    }
-    .actions{
-      .pull-right{
-        display: none;
-        padding-top: 3px;
-      }
+  .title{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font:700 20px/22px @sansFontFamily;
+  } 
+  .actions{
+    .pull-right{
+      display: none;
+      padding-top: 3px;
     }
   }
 }
 
 // Footer
 #footer{
-  padding:20px 0; 
+  padding:20px 0;
+  position: relative; 
   border-top: 10px solid @gray;
   background-color: @grayDark;
   color: @grayLight;
+  z-index: 100;
   @media (max-width: 767px) { // mobile
     margin: 0 -20px;
     padding: 20px;
@@ -416,6 +430,10 @@
 // Page
 .page-title{
   margin: 0;
+  @media (max-width: 767px) { // Landscape phone to portrait tablet
+    font-size: 30px;
+    line-height: 32px;  
+  }
 }
 
 #course-date-duration{
@@ -432,6 +450,9 @@
   @media (min-width: 1200px) { // Large desktop
     font-size:14px;  
   }
+  @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+    font-size:10px;
+  }
   .circle{
     width: 80px;
     height: 80px;
@@ -442,6 +463,11 @@
       width: 100px;
       height: 100px;  
     }
+    @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+      width: 68px;
+      height: 68px;
+      margin: 0 2px 0 0; 
+    }
     .cell{
       display: table-cell;
       vertical-align: middle;
@@ -449,6 +475,9 @@
       color:lighten(@linkColor, 30%);
       .border-radius(50px);
       border:5px solid lighten(@linkColor, 30%);
+      @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+        border-width: 3px;
+      }
       .numero{
         display: block;
         font: 400 30px/30px @handFontFamily;
@@ -466,6 +495,12 @@
     @media (min-width: 1200px) { // Large desktop
       background-position: 129px bottom;  
     }
+    @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+      background-position: 71px bottom;  
+    }
+    @media (max-width: 767px) { // Landscape phone to portrait tablet
+      background: none;
+    }
     &:last-child{
       background: none;
     }
@@ -479,9 +514,17 @@
     border-top: 1px solid @grayLight;
     text-transform: uppercase;
     text-align: right;
+    @media (max-width: 767px) { // Landscape phone to portrait tablet
+      text-align: center;
+    }
   }
   .number{
-    display: table;    
+    display: table;
+    @media (max-width: 767px) { // Landscape phone to portrait tablet
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 10px auto!important;
+    } 
     .cell{
       width: 27px;
       height: 27px;
@@ -497,6 +540,14 @@
         width: 34px;
         height: 34px;
       }
+      @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+        width: 21px;
+        height: 21px;
+        font-size: 21px;
+        line-height: 21px;
+        border-width: 2px;
+      }
+      
     }
   }
   .title{
@@ -510,6 +561,9 @@
   .title{
     margin-top: 15px;
     font:400 26px/30px @handFontFamily;
+    @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+      margin-top: 0;
+    }
   }
   ul{
     margin: 0 0 20px 0;
@@ -526,7 +580,7 @@
         float:right;
       }
     }  
-  }  
+  }
 }
 
 // Profesores
@@ -562,21 +616,26 @@
     background-color: @white;
     z-index: 10;
     .box-shadow(1px 0px 20px 1px @gray);
+    @media (max-width: 767px) { // Landscape phone to portrait tablet
+      position: static;
+      .box-shadow(0 0 0 0 transparent);
+    }
     .container{
+      width: 940px;
       @media (min-width: 1200px) { // Large desktop
         width: 1170px;
       }
       @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
-        width: 940px;
-      }
-      @media (max-width: 767px) { // Landscape phone to portrait tablet
         width: 724px;
-      }      
-      @media (max-width: 480px) { // Landscape phones and down
+      } 
+      @media (max-width: 767px) { // Landscape phone to portrait tablet
         width: auto;
-      }
+      }      
       .page-title{
         padding: 7px 20px 10px 20px;
+        @media (max-width: 767px) { // Landscape phone to portrait tablet
+          padding:0;
+        }
       }  
     }
   }
@@ -607,6 +666,10 @@
 // Columna lateral
 #columna-lateral{
   padding-top: 80px;
+  @media (max-width: 767px) { // Landscape phone to portrait tablet
+    padding-top: 0;
+    height: auto!important;
+  }
   &.affix {
     width: 300px;
     position: fixed;
@@ -617,6 +680,10 @@
     @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
       width: 228px;
     }
+    @media (max-width: 767px) { // Landscape phone to portrait tablet
+      width: auto;
+      position: static; 
+    }
   }
   .box-actions{
     margin:0 0 20px -21px;
@@ -626,6 +693,9 @@
     @media (min-width: 1200px) { // Large desktop
       margin-left:-31px;
       padding:20px 20px 20px 30px;
+    }
+    @media (max-width: 767px) { // Landscape phone to portrait tablet
+      margin:0 0 20px 0;
     }
     .prices{
       margin: 0 0 5px 0;
@@ -642,6 +712,9 @@
 // Aviso
 .aviso-en-proceso{
   font:400 12px/18px @sansFontFamily;
+  @media (max-width: 767px) { // Landscape phone to portrait tablet
+    margin-bottom: 20px;
+  }
 }
 
 // Compartir
@@ -677,6 +750,9 @@
   .logo{
     vertical-align: middle;
     text-align: center;
+    @media (max-width: 767px) { // Landscape phone to portrait tablet
+      text-align: left;
+    }
   }
 }
 #logos{
