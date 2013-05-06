@@ -4,6 +4,9 @@
 {% include js/bootstrap.min.js%};
 
 (function ($) {
+
+  $('#deepbanner').removeClass('db1').addClass('db' + (Math.floor(Math.random() * 3) + 1));
+
   //ajustes de los fijados para la ficha de curso
   $('#columna-lateral-wrapper').height($("#columna-lateral").height());
   $('#columna-lateral').affix({
