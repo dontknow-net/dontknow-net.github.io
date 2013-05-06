@@ -228,11 +228,19 @@
   padding: 5px 0 20px 0;
   background-repeat: no-repeat;
   background-position: top right;
-  background-image: url(../img/bk.deepbanner-v1.jpg);
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
+}
+#primary-content #deepbanner.db1 {
+  background-image: url(../img/bk.deepbanner-v1.jpg);
+}
+#primary-content #deepbanner.db2 {
+  background-image: url(../img/bk.deepbanner-v2.jpg);
+}
+#primary-content #deepbanner.db3 {
+  background-image: url(../img/bk.deepbanner-v3.jpg);
 }
 #primary-content #deepbanner .span6 {
   width: 800px;
