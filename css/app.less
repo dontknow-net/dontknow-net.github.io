@@ -1,17 +1,17 @@
-@import "variables.less";
-@import "mixins.less";
+@import "../less/bootstrap.less";
 @import "sprites-mixins";
 @import "firma.less";
 @import "ambitos.less";
 
 // Buttons
 .btn-primary{
+  background-color:#1C81AB;
   &:hover, &:active, &.active, &.disabled, &[disabled] {
     background-color: lighten(@linkColor, 5%);
     *background-color: darken(@linkColor, 5%);
     background-image: none;
   }
-} 
+}
 
 // Block links
 .block-link{
@@ -646,7 +646,8 @@
   &.affix{
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
+    z-index: 100; 
     .container{
       width:898px;
       @media (min-width: 1200px) { // Large desktop
@@ -733,6 +734,32 @@
   .title{
     &.hand{
       font:400 26px/30px @handFontFamily;
+    }
+  }
+  .equipo{
+    .title{
+      margin: 0 0 20px 0;
+      text-align: center;
+      line-height: 26px;
+    }
+    .row-fluid{
+      margin-bottom: 40px;
+    }
+    .firma{
+      margin-bottom: 0;
+      border:1px solid @grayLighter;
+    }
+    .description{
+      padding: 10px 20px 15px 20px;
+      font-size: 13px;
+      line-height: 18px;
+      color: #666;
+      border-color: @grayLighter;
+      border-style: solid;
+      border-top-width:0;
+      border-left-width:1px;
+      border-right-width:1px;
+      border-bottom-width:1px;
     }
   }
 }
