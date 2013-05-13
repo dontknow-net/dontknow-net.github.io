@@ -20,7 +20,7 @@
 
   $('#navbarque-wrapper').height($("#navbarque").height());
   $('#navbarque').affix({
-      //offset: $('#navbarque').position() - 10
+      offset: $('#navbarque').position()
   });
 
   // iluminación del menu de que-es con scrollspy
