@@ -25,7 +25,7 @@
 
   // iluminación del menu de que-es con scrollspy
   $('body').scrollspy({
-      offset: $('#navbarque').height() + 5
+      offset: $('#navbarque').height() - 10
   });
 
   //sistema de smooth scroll para anclas
