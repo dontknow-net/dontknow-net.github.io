@@ -39,9 +39,9 @@ prose:
       twitter: cuenta de twitter (sin url)
       linkedin: http://www.linkedin.com/url-del-usuario (si no tiene dejar en blanco)
       dontknow: http://www.dontknow.net/usuario/url-del-usuario (si no tiene dejar en blanco)
+    _posts: "layout"
+      field:
+        element: "text"
+        label: "Plantilla"
+        value: "curso"
     published: true
-      _posts: "layout"
-        field:
-          element: "text"
-          label: "Plantilla"
-          value: "curso"
