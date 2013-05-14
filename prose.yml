@@ -2,7 +2,7 @@ prose:
   siteurl: "http://schooloflife.dontknow.net/"
   metadata:
     "_posts/cursos":
-      - name: "layout"
+      -name: "layout"
         field:
           element: "text"
           label: "Plantilla"
