@@ -1,0 +1,20 @@
+prose:
+  siteurl: "http://schooloflife.dontknow.net/"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "text"
+          label: "Layout"
+          value: "default"
+      - name: "item"
+        field:
+          element: "select"
+          label: "Item"
+          placeholder: "Select an Item"
+          options:
+            - name: "Item 1"
+              value: "item1"
+            - name: "Item 2"
+              value: "item2"
+          selected: "item2"
