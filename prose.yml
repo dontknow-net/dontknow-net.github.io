@@ -1,9 +1,36 @@
 prose:
-  siteurl: "http://schooloflife.dontknow.net/"
   metadata:
-    "_posts/cursos":
-      -name: "layout"
-        field:
-          element: "text"
-          label: "Plantilla"
-          value: "default"
+    "_posts/cursos": |
+      layout: curso
+      title: Titulo del curso
+      fecha: Fecha del curso
+      duracion: Duración del curso
+      imagen: /img/content/imagen-del-curso.jpg
+      precio: 0
+      tipo: Desarrollo personal - desarrollo profesional
+      ambito: Familia
+      category: futuros - proceso - new (dejar solo 1)
+      tags:
+        - Nombre del tutor (como el campo title del profesor)
+        - Nombre del profesor (como el campo title del profesor)
+      entradilla: |
+        Esta es la entradilla del curso. puede ocupar varias lineas
+      colaboran:
+        - <a href="http://www.cartadelapaz.org/"><img src="/content/imgs/img.logo-carta-onu.png" alt="Fundación Carta de la Paz dirigida a la ONU"></a>
+        - <a href="http://www.edificarlapaz.org/"><img src="/content/imgs/img.logo-edificar-paz.png" alt="Edificar la paz en el siglo XXI"></a>
+        - <a href="http://www.escueladefilosofia.com/"><img src="/content/imgs/img.logo-escuela-filosofia.png" alt="Escuela de Filosofía"></a>
+      id_interesado: 4  (id de la lista de mailchimp dejar solo el numero)
+      id_apuntarme: 8  (id de la lista de mailchimp dejar solo el numero)
+      published: true
+    "_posts/profesores": |
+      layout: profesor
+      category: profesor
+      permalink: /profesor/nombre-profesor
+      title: Nombre del profesor
+      cargo: Cargo del profesor
+      entradilla: Este es el texto que sale en el snippet del profesor cuando es colaborador
+      imagen: /content/imgs/nombre-profesor.jpg
+      twitter: cuenta de twitter (sin url)
+      linkedin: http://www.linkedin.com/url-del-usuario (si no tiene dejar en blanco)
+      dontknow: http://www.dontknow.net/usuario/url-del-usuario (si no tiene dejar en blanco)
+      published: true
