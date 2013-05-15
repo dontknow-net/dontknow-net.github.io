@@ -1,7 +1,7 @@
 ---
 layout: curso
 title: Nacionalismo. Ten un punto de vista fundamentado. Test de prose.
-fecha: 15 Junio
+fecha: 15 Junio 2013
 duracion: 3 semanas
 imagen: /content/imgs/cursos/img.rostro-panuelo.jpg
 precio: 30
