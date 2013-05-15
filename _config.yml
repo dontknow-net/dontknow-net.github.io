@@ -1,10 +1,13 @@
 auto: true
 server: true
-exclude: dkschool.sublime-project dkschool.sublime-workspace Drupal.sublime-projectcompletions
+exclude:
+  - dkschool.sublime-project
+  - dkschool.sublime-workspace
+  - Drupal.sublime-projectcompletions
 host: dontknow-net.github.io
 permalink: /curso/:title
 prose:
-  siteurl: "http://schooloflife.dontknow.net/"
+  siteurl: http://http://www.dontknowschool.com/
   metadata:
     "_posts/cursos": |
       layout: curso
