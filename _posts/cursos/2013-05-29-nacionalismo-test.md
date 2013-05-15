@@ -10,7 +10,7 @@ precio: "30"
 tipo: Mejorar la sociedad
 ambito: Paz y convivencia
 category: proceso
-tags: "Jordi Cussó Porredón,Enrique Baca Baldomero,Fancesc Torralba,Jorge Úbeda"
+tags: "Jordi Cussó Porredón","Enrique Baca Baldomero","Fancesc Torralba","Jorge Úbeda"
 id_interesado: "1"
 id_apuntarme: "2"
 colaboran: "<a href=\"http://www.dontknow.net/content/fundacion-carta-paz-dirigida-onu\\\"><img src=\"/content/imgs/img.logo-carta-onu.png\" alt=\"Fundación Carta de la Paz dirigida a la ONU\"></a>,<a href=\"http://www.edificarlapaz.org/\\\"><img src=\"/content/imgs/img.logo-edificar-paz.png\" alt=\"Edificar la paz en el siglo XXI\"></a>,<a href=\"http://www.dontknow.net/organizacion/escuela-filosofia\\\"><img src=\"/content/imgs/img.logo-escuela-filosofia.png\" alt=\"Escuela de Filosofía\"></a>"
