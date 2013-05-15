@@ -1,4 +1,13 @@
+auto: true
+server: true
+exclude:
+  - dkschool.sublime-project
+  - dkschool.sublime-workspace
+  - Drupal.sublime-projectcompletions
+host: dontknow-net.github.io
+permalink: /curso/:title
 prose:
+  siteurl: http://www.dontknowschool.com/
   metadata:
     "_posts/cursos": |
       layout: curso
@@ -21,7 +30,7 @@ prose:
         - <a href="http://www.escueladefilosofia.com/"><img src="/content/imgs/img.logo-escuela-filosofia.png" alt="Escuela de Filosofía"></a>
       id_interesado: 4  (id de la lista de mailchimp dejar solo el numero)
       id_apuntarme: 8  (id de la lista de mailchimp dejar solo el numero)
-      published: true
+      published: true |
     "_posts/profesores": |
       layout: profesor
       category: profesor
@@ -33,4 +42,4 @@ prose:
       twitter: cuenta de twitter (sin url)
       linkedin: http://www.linkedin.com/url-del-usuario (si no tiene dejar en blanco)
       dontknow: http://www.dontknow.net/usuario/url-del-usuario (si no tiene dejar en blanco)
-      published: true
+    published: true

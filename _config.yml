@@ -6,14 +6,3 @@ exclude:
   - Drupal.sublime-projectcompletions
 host: dontknow-net.github.io
 permalink: /curso/:title
-prose:
-  siteurl: http://www.dontknowschool.com/
-  metadata:
-    _posts/cursos:
-      - name: "layout"
-        field:
-          element: "text"
-          label: "Plantilla"
-          value: "curso"
-
-
