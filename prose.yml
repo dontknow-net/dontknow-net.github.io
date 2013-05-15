@@ -1,4 +1,4 @@
-_prose:
+prose:
   siteurl: http://www.dontknowschool.com/
   metadata:
     _posts/cursos:
@@ -7,5 +7,71 @@ _prose:
           element: "text"
           label: "Plantilla"
           value: "curso"
-
-
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titulo del curso"
+          value: "Titulo del curso"
+      - name: "entradilla"
+        field:
+          element: "text"
+          label: "Entradilla"
+          value: "Introduce la entradilla..."
+      - name: "duracion"
+        field:
+          element: "text"
+          label: "Duración del curso"
+          value: "Duración del curso"
+      - name: "imagen"
+        field:
+          element: "text"
+          label: "Imagen para el listado"
+          value: "/img/content/imagen-del-curso.jpg"
+      - name: "precio"
+        field:
+          element: "text"
+          label: "Precio"
+          value: "0"
+      - name: "ambito"
+        field:
+          element: "text"
+          label: "Ámbito de DK"
+          value: "Familia"
+      - name: "category"
+        field:
+          element: "select"
+            label: "Estado del curso"
+            placeholder: "Selecciona"
+            options:
+              - name: "Futuro"
+                value: "futuros"
+              - name: "En proceso"
+                value: "proceso"
+              - name: "Destacado"
+                value: "new"
+            selected: "futuros"
+      - name: "tags"
+        field:
+          element: "text"
+          label: "Profesores"
+          value:
+            - "Nombre del tutor (como el campo title del profesor)"
+            - "Nombre del profesor (como el campo title del profesor)"
+      - name: "colaboran"
+        field:
+          element: "text"
+          label: "Organizaciones que colaboran"
+          value:
+            - "<a href=\"http://www.dontknow.net/content/fundacion-carta-paz-dirigida-onu\\\"><img src=\"/content/imgs/img.logo-carta-onu.png\" alt=\"Fundación Carta de la Paz dirigida a la ONU\"></a>"
+            - "<a href=\"http://www.edificarlapaz.org/\\\"><img src=\"/content/imgs/img.logo-edificar-paz.png\" alt=\"Edificar la paz en el siglo XXI\"></a>"
+            - "<a href=\"http://www.dontknow.net/organizacion/escuela-filosofia\\\"><img src=\"/content/imgs/img.logo-escuela-filosofia.png\" alt=\"Escuela de Filosofía\"></a>"
+      - name: "id_interesado"
+        field:
+          element: "text"
+          label: "id de interesado de la lista de mailchimp"
+          value: "0"
+      - name: "id_apuntarme"
+        field:
+          element: "text"
+          label: "id de id_apuntarme de la lista de mailchimp"
+          value: "0"
