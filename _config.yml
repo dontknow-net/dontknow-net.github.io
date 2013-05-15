@@ -58,4 +58,10 @@ prose:
             - name: "Destacado"
               value: "new"
           selected: "futuros"
-
+      - name: "tags"
+        field:
+          element: "text"
+          label: "Profesores"
+          value:
+            - "Nombre del tutor (como el campo title del profesor)"
+            - "Nombre del profesor (como el campo title del profesor)"
