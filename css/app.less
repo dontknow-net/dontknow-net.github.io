@@ -647,19 +647,39 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100; 
+    z-index: 100;
+    @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+      //position: static;
+    }
     .container{
       width:898px;
       @media (min-width: 1200px) { // Large desktop
         width: 1128px;
       }
       @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
-        width: 682px;
+        width: 722px;
       }
       @media (max-width: 767px) { // mobile
         width: auto;
       }
     }
+  }
+  @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+    font-size: 13px;
+    .navbar-inner{
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    .nav{
+      margin-right: 0;
+       > li > a{
+        padding: 10px 5px;
+      }
+    }
+  }
+  @media (max-width: 767px) { // Landscape phone to portrait tablet
+    height: 0!important;
+    display: none;
   }
 }
 
@@ -731,6 +751,27 @@
 #que-es{
   margin-bottom: 40px;
   padding-top: 20px;
+  @media (max-width: 767px) { // Landscape phone to portrait tablet
+    padding-top: 0;
+  }
+  #intro{
+    .img-circle{
+      @media (max-width: 767px) { // Landscape phone to portrait tablet
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 979px) { // Portrait tablet to landscape and desktop
+    h1{
+      margin-top: 0;
+      font-size: 30px;
+      line-height: 32px;
+    }
+    .lead{
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
   .title{
     &.hand{
       font:400 26px/30px @handFontFamily;
@@ -744,12 +785,22 @@
     }
     .row-fluid{
       margin-bottom: 40px;
+      &:last-child{
+        margin-bottom: 10px;
+      }
+      @media (max-width: 767px) { // Landscape phone to portrait tablet
+        margin-bottom: 0;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
     }
     .firma{
       margin-bottom: 0;
       border:1px solid @grayLighter;
     }
     .description{
+      margin-bottom: 10px;
       padding: 10px 20px 15px 20px;
       font-size: 13px;
       line-height: 18px;
@@ -760,6 +811,14 @@
       border-left-width:1px;
       border-right-width:1px;
       border-bottom-width:1px;
+      p:last-child{
+        margin-bottom: 0;
+      }    
+    }
+    @media (max-width: 767px) { // Landscape phone to portrait tablet
+      .btn{
+        margin-bottom: 20px;
+      }
     }
   }
 }
