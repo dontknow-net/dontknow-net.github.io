@@ -7,7 +7,7 @@ exclude:
 host: dontknow-net.github.io
 permalink: /curso/:title
 prose:
-  siteurl: http://http://www.dontknowschool.com/
+  siteurl: http://www.dontknowschool.com/
   metadata:
     "_posts/cursos": |
       layout: curso
