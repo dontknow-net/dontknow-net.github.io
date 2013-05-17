@@ -7,6 +7,24 @@
   font:400 13px/16px @sansFontFamily;
   color: @gray;
   background:@whiteDarker;
+  .row-fluid{
+    margin-bottom: 0;
+  }
+  .span5{
+    padding-top: 5px;
+    text-align: right;
+    @media (max-width: 979px) { // Portrait tablet to landscape and desktop
+      width: 100%;
+      clear: both;
+      text-align: left;
+      br{
+        display: none;
+      }
+    }
+    .btn{
+      margin-bottom: 5px;
+    }
+  }
   .user-picture{
     width:50px;
     min-width:50px;
