@@ -10,7 +10,7 @@ precio: "30"
 tipo: Mejorar la sociedad
 ambito: Paz y convivencia
 category: futuros
-tags: "\"Jordi Cussó Porredón\",\"Enrique Baca Baldomero\",\"Fancesc Torralba\",\"Jorge Úbeda\""
+tags: "Jordi Cussó Porredón,Enrique Baca Baldomero,Fancesc Torralba,Jorge Úbeda"
 id_interesado: "1"
 id_apuntarme: "2"
 colaboran: null
