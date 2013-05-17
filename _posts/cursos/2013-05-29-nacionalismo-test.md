@@ -1,7 +1,7 @@
 ---
 published: true
 layout: curso
-title: Nacionalismo.... 4
+title: Nacionalismo....  5
 fecha: 15 Junio
 entradilla: "Aprende y debate sobre un tema que apasiona a todos, pero pocos conocen bien.Dialoga y define tu postura de manera más consciente y racional."
 duracion: 3 semanas
