@@ -1,7 +1,7 @@
 ---
 published: true
 layout: curso
-title: Nacionalismo.... 4
+title: Nacionalismo....  5
 fecha: 15 Junio
 entradilla: "Aprende y debate sobre un tema que apasiona a todos, pero pocos conocen bien.Dialoga y define tu postura de manera más consciente y racional."
 duracion: 3 semanas
@@ -10,11 +10,7 @@ precio: "30"
 tipo: Mejorar la sociedad
 ambito: Paz y convivencia
 category: futuros
-tags:
-  - Jordi Cussó Porredón
-  - Enrique Baca Baldomero
-  - Fancesc Torralba
-  - Jorge Úbeda
+tags: "Jordi Cussó Porredón,Enrique Baca Baldomero,Fancesc Torralba,Jorge Úbeda"
 id_interesado: "1"
 id_apuntarme: "2"
 colaboran: null
