@@ -14,8 +14,7 @@ tags:
   - Enrique Baca
   - Luis González Feria
   - Jordi Serrano
-entradilla: |
-  Un curso para reactivarnos con imaginación y no quedar frenados en un mundo que evoluciona rápidamente.
+entradilla: Un curso para reactivarnos con imaginación y no quedar frenados en un mundo que evoluciona rápidamente.
 colaboran:
   - <img src="/content/imgs/img.logo-carta-onu.png" alt="Fundación Carta de la Paz dirigida a la ONU">
   - <img src="/content/imgs/img.logo-edificar-paz.png" alt="Edificar la paz en el siglo XXI">

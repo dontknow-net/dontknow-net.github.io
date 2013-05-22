@@ -12,4 +12,5 @@ dontknow: http://www.dontknow.net/usuario/guzman-lopez-bayarri
 published: true
 ---
 
-Es además jefe del Servicio de Psiquiatría del Hospital Universitario "Puerta de Hierro-Majadahonda" de Madrid.
+Experto en pensamiento creativo. Autor de los libros <em>Serendipity<em> y <em>El jukebox del emprendedor</em>.
+Disciplinas y especializaciones del experto: educación, formación, desarrollo humano.
