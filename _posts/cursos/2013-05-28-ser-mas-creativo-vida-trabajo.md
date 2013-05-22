@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: Ser más creativo en la vida y el trabajo
+title: Ser más creativo en la vida y el trabajo...
 fecha: FECHA AÚN POR DEFINIR
 duracion: 10 semanas
 imagen: /content/imgs/cursos/img.abstracto.jpg
