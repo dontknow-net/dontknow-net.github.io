@@ -11,7 +11,7 @@ category: proceso
 tags:
   - Guzmán López Bayarri
   - José Luis González Quirós
-  - Enrique Baca
+  - Enrique Baca Baldomero
   - Luis González Feria
   - Jordi Serrano
 entradilla: Un curso para reactivarnos con imaginación y no quedar frenados en un mundo que evoluciona rápidamente.
