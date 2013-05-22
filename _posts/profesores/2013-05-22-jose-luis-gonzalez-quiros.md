@@ -6,7 +6,7 @@ title: José Luis González Quirós
 cargo: Filósofo y analista político
 entradilla: Profesor de filosofía en la <a href="http://www.urjc.es/">Universidad Rey Juan Carlos</a> (Madrid, España). Forma parte de la <a href="http://www.ech.es/">Escuela Contemporánea de Humanidades</a>. Pertenece a los consejos de redacción de <a href="http://www.nuevarevista.net/">Nueva revista</a>, <a href="http://www.revistahc.org/">Revista Hispano Cubana</a>, <a href="http://www.dendramedica.es/">Dendra medica</a> y de la <a href="http://www.revistadelibros.com/">Revista de libros</a>.
 imagen: /content/imgs/jose-luis-gonzalez-quiros-60.jpg
-twitter: https://twitter.com/jlgq
+twitter: jlgq
 linkedin: http://es.linkedin.com/pub/jose-luis-gonzalez-quiros/5/b10/629
 dontknow: http://www.dontknow.net/usuario/jose-luis-gonzalez-quiros
 published: true
