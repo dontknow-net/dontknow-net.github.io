@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: Mejorar la convivencia en casa.
+title: Mejorar la convivencia en casa
 fecha: 15 Junio
 duracion: 3 semanas
 imagen: /img/content/img.rostro-panuelo.jpg

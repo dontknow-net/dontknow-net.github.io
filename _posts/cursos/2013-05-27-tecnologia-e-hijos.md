@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: Tecnología e hijos. aprende a gestionarlo.
+title: Tecnología e hijos. Aprende a gestionarlo
 fecha: 15 Junio
 duracion: 3 semanas
 imagen: /img/content/img.rostro-panuelo.jpg

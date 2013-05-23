@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: Estado de Bienestar. Tu aportación para conseguirlo.
+title: Estado de Bienestar. Tu aportación para conseguirlo
 fecha: 15 Junio
 duracion: 3 semanas
 imagen: /img/content/img.rostro-panuelo.jpg

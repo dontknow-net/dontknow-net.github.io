@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: Deporte e hijos. aprende a gestionarlo.
+title: Deporte e hijos. Aprende a gestionarlo
 fecha: 15 Junio
 duracion: 3 semanas
 imagen: /img/content/img.rostro-panuelo.jpg

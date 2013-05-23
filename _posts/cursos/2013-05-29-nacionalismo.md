@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: Nacionalismo. Ten un punto de vista fundamentado.
+title: Nacionalismo. Ten un punto de vista fundamentado
 fecha: Fecha aún por definir
 duracion: 3 semanas
 imagen: /content/imgs/cursos/img.rostro-panuelo.jpg
@@ -25,7 +25,7 @@ published: true
 
 <section>
   <header>
-    <h2>Para qué te servirá este itinerario</h2>
+    <h2>Para qué te servirá este curso</h2>
   </header>
   <ol>
     <li>Para opinar con más bases sobre un tema del que muchos hablan sin conocerlo</li>
@@ -39,7 +39,7 @@ published: true
   <header>
     <div class="row-fluid">
       <div class="span6" >
-        <h2 class="title">Itinerario online con sesiones calendarizadas</h2>
+        <h2 class="title">Curso online con sesiones calendarizadas</h2>
       </div>
       <div class="span6">
         <p class="course-duration">
@@ -58,10 +58,10 @@ published: true
     </div>
   </header>
   <ul>
-      <li><i class="icon-ok"> </i> Debate con expertos en el tema del itinerario.</li>
+      <li><i class="icon-ok"> </i> Debate con expertos en el tema del curso.</li>
       <li><i class="icon-ok"> </i>  Conversa con alumnos con tus mismas inquietudes.</li>
-      <li><i class="icon-ok"> </i>  Aprende a tu ritmo, aunque hay un calendario, puedes seguir participando en el itinerario y accediendo a sus contenidos</li>
-      <li><i class="icon-ok"> </i>  Recibe la documentación al acabar el itinerario.</li>
+      <li><i class="icon-ok"> </i>  Aprende a tu ritmo, aunque hay un calendario, puedes seguir participando en el curso y accediendo a sus contenidos</li>
+      <li><i class="icon-ok"> </i>  Recibe la documentación al acabar el curso.</li>
   </ul>
 </section>
 
@@ -130,7 +130,7 @@ published: true
       </div>
       <div class="span9 well">
         <h3 class="title">¿Y cuál es mi identidad? Hacia las identidades porosas. La riqueza de la diversidad</h3>
-        <p>Un paso más en el itinerario: la posibilidad de tratar a otras personas con identidades colectivas diversas. Asomarnos a la riqueza que puede haber en la diversidad.</p>
+        <p>Un paso más en el curso: la posibilidad de tratar a otras personas con identidades colectivas diversas. Asomarnos a la riqueza que puede haber en la diversidad.</p>
       </div>
     </li>
     <li class="row-fluid">
@@ -148,7 +148,7 @@ published: true
       </div>
       <div class="span9 well">
         <h3 class="title">De la deconstrucción del enemigo a la construcción del amigo: ¿qué podemos hacer colectivamente?</h3>
-        <p>El itinerario culmina en posibles acciones que podemos emprender con otros para un mayor diálogo social más racional y respetuoso. La intención no es llegar a soluciones únicas, ni a alcanzar consensos. Sólo a abrir puertas para que los participantes encuentren sus pistas de acción.</p>
+        <p>El curso culmina en posibles acciones que podemos emprender con otros para un mayor diálogo social más racional y respetuoso. La intención no es llegar a soluciones únicas, ni a alcanzar consensos. Sólo a abrir puertas para que los participantes encuentren sus pistas de acción.</p>
       </div>
     </li>
   </ol>

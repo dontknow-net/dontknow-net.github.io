@@ -4,12 +4,12 @@
         <div class="row">
           <div class="span9">
             <a href="/"><div class="title hideText">Dontknow School of Life</div></a>
-            <p class="subtitle">Itinerarios formativos que mejoran tu vida</p>
+            <p class="subtitle">Cursos online que mejoran tu vida</p>
           </div>
           <div class="span3">
             <ul class="header-actions unstyled">
               <li>
-                <a href="/" class="btn">← Ver itinerarios</a>
+                <a href="/" class="btn">← Ver cursos</a>
               </li>
               {% if page.saber-mas != true %}
                 <li>

@@ -23,7 +23,7 @@ published: true
 
 <section>
   <header>
-    <h2>Para qué te servirá este itinerario a ti</h2>
+    <h2>Para qué te servirá este curso</h2>
   </header>
   <ol>
     <li>Comprender qué significa “creer” en algo</li>
@@ -40,7 +40,7 @@ published: true
   <header>
     <div class="row-fluid">
       <div class="span6" >
-        <h2 class="title">Itinerario online con sesiones calendarizadas</h2>
+        <h2 class="title">Curso online con sesiones calendarizadas</h2>
       </div>
       <div class="span6">
         <p class="course-duration">
@@ -64,10 +64,10 @@ published: true
     </div>
   </header>
   <ul>
-      <li><i class="icon-ok"> </i> Debate con expertos en el tema del itinerario.</li>
+      <li><i class="icon-ok"> </i> Debate con expertos en el tema del curso.</li>
       <li><i class="icon-ok"> </i>  Conversa con alumnos con tus mismas inquietudes.</li>
-      <li><i class="icon-ok"> </i>  Aprende a tu ritmo, aunque hay un calendario, puedes seguir participando en el itinerario y accediendo a sus contenidos</li>
-      <li><i class="icon-ok"> </i>  Recibe la documentación al acabar el itinerario.</li>
+      <li><i class="icon-ok"> </i>  Aprende a tu ritmo, aunque hay un calendario, puedes seguir participando en el curso y accediendo a sus contenidos</li>
+      <li><i class="icon-ok"> </i>  Recibe la documentación al acabar el curso.</li>
   </ul>
 </section>
 

@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: Herramientas para elegir una profesión.
+title: Herramientas para elegir una profesión
 fecha: 15 Junio
 duracion: 3 semanas
 imagen: /img/content/img.rostro-panuelo.jpg

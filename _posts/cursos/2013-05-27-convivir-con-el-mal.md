@@ -3,7 +3,7 @@ published:
   - true
   - "true"
 layout: curso
-title: Convivir con el mal.
+title: Convivir con el mal
 fecha: 15 Junio
 duracion: 3 semanas
 imagen: "/img/content/img.rostro-panuelo.jpg"

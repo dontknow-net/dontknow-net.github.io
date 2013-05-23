@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: Mejora la comunicación con tu hijo adolescente.
+title: Mejora la comunicación con tu hijo adolescente
 fecha: 15 Junio
 duracion: 3 semanas
 imagen: /img/content/img.rostro-panuelo.jpg
