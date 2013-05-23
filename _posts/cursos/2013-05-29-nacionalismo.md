@@ -1,7 +1,7 @@
 ---
 layout: curso
 title: Nacionalismo. Ten un punto de vista fundamentado.
-fecha: 15 Junio
+fecha: Fecha aún por definir
 duracion: 3 semanas
 imagen: /content/imgs/cursos/img.rostro-panuelo.jpg
 precio: 30
@@ -45,11 +45,6 @@ published: true
         <p class="course-duration">
           <span class="circle">
             <span class="cell">
-              <span class="numero">15</span> junio
-            </span>
-          </span>
-          <span class="circle">
-            <span class="cell">
               <span class="numero">3</span> semanas
             </span>
           </span>
@@ -76,8 +71,7 @@ published: true
   </header>
   <ol class="unstyled timeline">
     <li class="row-fluid">
-      <div class="span2 date">15 Junio</div>
-      <div class="span1 number">
+      <div class="span1 number offset2">
         <span class="cell">1</span>
       </div>
       <div class="span9 well">
@@ -95,8 +89,7 @@ published: true
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date">17 Junio</div>
-      <div class="span1 number">
+      <div class="span1 number offset2">
         <span class="cell">3</span>
       </div>
       <div class="span9 well">
@@ -114,8 +107,7 @@ published: true
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date">19 Junio</div>
-      <div class="span1 number">
+      <div class="span1 number offset2">
         <span class="cell">5</span>
       </div>
       <div class="span9 well">
@@ -133,8 +125,7 @@ published: true
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date">22 Junio</div>
-      <div class="span1 number">
+      <div class="span1 number offset2">
         <span class="cell">7</span>
       </div>
       <div class="span9 well">
