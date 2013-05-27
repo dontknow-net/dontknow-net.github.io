@@ -19,8 +19,8 @@ colaboran:
   - <img src="/content/imgs/img.logo-carta-onu.png" alt="Fundación Carta de la Paz dirigida a la ONU">
   - <img src="/content/imgs/img.logo-edificar-paz.png" alt="Edificar la paz en el siglo XXI">
   - <img src="/content/imgs/img.logo-escuela-filosofia.png" alt="Escuela de Filosofía">
-id_interesado: 4
-id_apuntarme: 8
+id_interesado: 16777216
+id_apuntarme: 33554432
 published: true
 ---
 
