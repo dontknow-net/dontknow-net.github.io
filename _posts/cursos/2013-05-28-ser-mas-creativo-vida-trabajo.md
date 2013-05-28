@@ -17,8 +17,6 @@ tags:
 entradilla: Un curso para reactivarnos con imaginación y no quedar frenados en un mundo que evoluciona rápidamente.
 colaboran:
   - <a href="http://elsercreativo.com/"><img src="/content/imgs/logo.el-ser-creativo.gif" alt="El Ser Creativo"></a>
-id_interesado: 4
-id_apuntarme: 8
 published: true
 ---
 

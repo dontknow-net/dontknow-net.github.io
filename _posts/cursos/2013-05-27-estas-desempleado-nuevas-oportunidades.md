@@ -17,8 +17,8 @@ entradilla: |
   Aprende y debate sobre un tema que apasiona a todos, pero pocos conocen bien.
   Dialoga y define tu postura de manera más consciente y racional.
 colaboran:
-id_interesado: 4
-id_apuntarme: 8
+id_interesado: 1024
+id_apuntarme: 2048
 published: true
 ---
 

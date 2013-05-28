@@ -16,8 +16,8 @@ tags:
 entradilla: |
   No te dejes llevar por cualquier opinión. Toma las riendas de tu pensamiento.
 colaboran:
-id_interesado: 4
-id_apuntarme: 8
+id_interesado: 4194304
+id_apuntarme: 8388608
 published: true
 ---
 
