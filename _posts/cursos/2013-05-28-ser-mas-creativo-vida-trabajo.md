@@ -16,9 +16,7 @@ tags:
   - Jordi Serrano
 entradilla: Un curso para reactivarnos con imaginación y no quedar frenados en un mundo que evoluciona rápidamente.
 colaboran:
-  - <img src="/content/imgs/img.logo-carta-onu.png" alt="Fundación Carta de la Paz dirigida a la ONU">
-  - <img src="/content/imgs/img.logo-edificar-paz.png" alt="Edificar la paz en el siglo XXI">
-  - <img src="/content/imgs/img.logo-escuela-filosofia.png" alt="Escuela de Filosofía">
+  - <a href="http://elsercreativo.com/"><img src="/content/imgs/logo.el-ser-creativo.gif" alt="El Ser Creativo"></a>
 id_interesado: 4
 id_apuntarme: 8
 published: true
@@ -29,10 +27,11 @@ published: true
     <h2>Para qué te servirá este curso</h2>
   </header>
   <ol>
-    <li>Para opinar con más bases sobre un tema del que muchos hablan sin conocerlo</li>
-    <li>Para entender mejor los motivos de las personas que están a favor y en contra.</li>
-    <li>Acceder a información confiable y formarte tu punto de vista, en vez de asumir como cierta cualquier cosa</li>
-    <li>Contribuir al diálogo social, frenando la difusión de prejuicios que pueden provocar conflictos mayores</li>
+    <li>Para tomar conciencia de que hay muchas formas de hacer las cosas</li>
+    <li>Desarrollar una nueva actitud y forma de percibir el mundo y sus posibilidades</li>
+    <li>Entender mejor las oportunidades y capacidades que potencialmente todos tenemos</li>
+    <li>Ponerte en marcha en lugar de quedarte esperando</li>
+    <li>Contribuir al desarrollo de tu entorno, aportando ideas y soluciones que nunca hubieras imaginado.</li>
   </ol>
 </section>
 <hr>

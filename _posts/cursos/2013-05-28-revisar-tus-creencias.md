@@ -46,11 +46,6 @@ published: true
         <p class="course-duration">
           <span class="circle">
             <span class="cell">
-              <span class="numero">15</span> junio
-            </span>
-          </span>
-          <span class="circle">
-            <span class="cell">
               <span class="numero">3</span> semanas
             </span>
           </span>
@@ -77,8 +72,7 @@ published: true
   </header>
   <ol class="unstyled timeline">
     <li class="row-fluid">
-      <div class="span2 date">Fecha por definir</div>
-      <div class="span1 number">
+      <div class="span1 number offset2">
         <span class="cell">1</span>
       </div>
       <div class="span9 well">
@@ -96,8 +90,7 @@ published: true
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date"> </div>
-      <div class="span1 number">
+      <div class="span1 number offset2">
         <span class="cell">3</span>
       </div>
       <div class="span9 well">
@@ -117,8 +110,7 @@ y a la violencia, al infantilismo o al dominio sobre otros.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date"> </div>
-      <div class="span1 number">
+      <div class="span1 number offset2">
         <span class="cell">5</span>
       </div>
       <div class="span9 well">
@@ -138,8 +130,7 @@ responsable a los grupos de creyentes.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date"> </div>
-      <div class="span1 number">
+      <div class="span1 number offset2">
         <span class="cell">7</span>
       </div>
       <div class="span9 well">
@@ -158,8 +149,7 @@ no hemos tomado conciencia pero que nos marcan en la vida cotidiana.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date"> </div>
-      <div class="span1 number">
+      <div class="span1 number offset2">
         <span class="cell">9</span>
       </div>
       <div class="span9 well">
@@ -179,8 +169,7 @@ sociedad, la política y los que no piensan como nosotros.</p>
       </div>
     </li>
     <li class="row-fluid">
-      <div class="span2 date"> </div>
-      <div class="span1 number">
+      <div class="span1 number offset2">
         <span class="cell">11</span>
       </div>
       <div class="span9 well">
