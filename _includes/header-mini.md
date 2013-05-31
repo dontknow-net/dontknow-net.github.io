@@ -4,7 +4,7 @@
         <div class="row">
           <div class="span9">
             <a href="/"><div class="title hideText">Dontknow School of Life</div></a>
-            <p class="subtitle">Cursos online que mejoran tu vida</p>
+            <p class="subtitle">Una escuela para lo que realmente importa en la vida</p>
           </div>
           <div class="span3">
             <ul class="header-actions unstyled">
