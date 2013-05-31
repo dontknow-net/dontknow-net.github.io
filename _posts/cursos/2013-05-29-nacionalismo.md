@@ -2,7 +2,7 @@
 layout: curso
 title: Nacionalismo. Ten un punto de vista fundamentado
 fecha: Fecha aún por definir
-duracion: 3 semanas
+duracion: 8 semanas
 imagen: /content/imgs/cursos/img.rostro-panuelo.jpg
 precio: 30
 tipo: Mejorar la sociedad
@@ -45,12 +45,12 @@ published: true
         <p class="course-duration">
           <span class="circle">
             <span class="cell">
-              <span class="numero">3</span> semanas
+              <span class="numero">8</span> semanas
             </span>
           </span>
           <span class="circle">
             <span class="cell">
-              <span class="numero">100</span> horas
+              <span class="numero">30</span> horas
             </span>
           </span>
         </p>

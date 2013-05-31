@@ -1,11 +1,11 @@
 ---
 layout: curso
-title: Reinventarse en un mundo cambiante. Ser creativo
+title: Reinventarse en un mundo cambiante. Desarrollar tu creatividad
 fecha: FECHA AÚN POR DEFINIR
-duracion: 10 semanas
+duracion: 8 semanas
 imagen: /content/imgs/cursos/img.abstracto.jpg
 precio: 30
-tipo: Desarrollo personal
+tipo: Desarrollo profesional
 ambito: Trabajo
 category: proceso
 tags:
@@ -44,12 +44,12 @@ published: true
         <p class="course-duration">
           <span class="circle">
             <span class="cell">
-              <span class="numero">3</span> semanas
+              <span class="numero">8</span> semanas
             </span>
           </span>
           <span class="circle">
             <span class="cell">
-              <span class="numero">100</span> horas
+              <span class="numero">30</span> horas
             </span>
           </span>
         </p>

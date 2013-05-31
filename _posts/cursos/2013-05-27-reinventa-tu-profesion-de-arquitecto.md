@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: Reinventa tu profesión de arquitecto
+title: Reinventarte desde tu profesión de arquitecto
 fecha: 15 Junio
 duracion: 3 semanas
 imagen: /img/content/img.rostro-panuelo.jpg

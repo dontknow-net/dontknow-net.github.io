@@ -1,11 +1,11 @@
 ---
 layout: curso
-title: Estado de Bienestar. Tu aportación para conseguirlo
+title: Hacer sostenible la sociedad del bienestar
 fecha: 15 Junio
 duracion: 3 semanas
 imagen: /img/content/img.rostro-panuelo.jpg
 precio: 30
-tipo: Desarrollo profesional
+tipo: Mejorar la sociedad
 ambito: Trabajo
 category: futuros
 tags:

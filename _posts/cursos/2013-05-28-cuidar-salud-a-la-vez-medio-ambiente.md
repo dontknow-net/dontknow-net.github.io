@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: Cuidar tu salud a la vez que el medio ambiente
+title: El deterioro del medio ambiente y el impacto en tu salud. Precauciones en el día a día.
 fecha: FECHA AÚN POR DEFINIR
 duracion: 5 semanas
 imagen: /content/imgs/cursos/img.naturaleza.jpg

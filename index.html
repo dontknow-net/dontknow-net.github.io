@@ -42,7 +42,7 @@ home: true
                         <div class="user-picture">
                           <img src="{{ profesor.imagen }}" alt="{{ profesor.title }}">
                         </div>
-                        <span class="teacher">Tutor</span>
+                        <span class="teacher">Profesor coordinador</span>
                         <span class="name">{{ profesor.title }}</span>
                         {{ profesor.cargo }}
                       </div>
@@ -65,7 +65,7 @@ home: true
 
 <div class="container">
   <section id="courses-in-progress">
-    <header class="header-section">En proceso</header>
+    <header class="header-section">Próximamente</header>
     <ul class="thumbnails">
       {% for post in site.categories.proceso %}
         <li class="span4">
@@ -89,7 +89,7 @@ home: true
                       <div class="user-picture">
                         <img src="{{ profesor.imagen }}" alt="{{ profesor.title }}">
                       </div>
-                      <span class="teacher">Tutor</span>
+                      <span class="teacher">Profesor coordinador</span>
                       <span class="name">{{ profesor.title }}</span>
                       {{ profesor.cargo }}
                     </div>
@@ -105,7 +105,7 @@ home: true
 
   {% if site.categories.futuros | size  > 0 %}
     <section id="courses-future">
-      <header class="header-section">Próximamente</header>
+      <header class="header-section">En lista de espera</header>
       <ul class="thumbnails">
         {% for post in site.categories.futuros %}
           <li class="span4">

@@ -1,6 +1,6 @@
 ---
 layout: curso
-title: ¿Estás desempleado? Conviértelo en nuevas oportunidades
+title: Conciliar tu vida profesional y familiar
 fecha: 15 Junio
 duracion: 3 semanas
 imagen: /img/content/img.rostro-panuelo.jpg
