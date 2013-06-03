@@ -2,7 +2,7 @@
 layout: curso
 title: El deterioro del medio ambiente y el impacto en tu salud. Precauciones en el día a día.
 fecha: FECHA AÚN POR DEFINIR
-duracion: 5 semanas
+duracion: 8 semanas
 imagen: /content/imgs/cursos/img.naturaleza.jpg
 precio: 35
 tipo: Mejorar la sociedad
