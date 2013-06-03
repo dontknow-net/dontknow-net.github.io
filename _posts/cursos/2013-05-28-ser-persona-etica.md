@@ -8,7 +8,7 @@ fecha: 15 Junio
 duracion: 3 semanas
 imagen: "/img/content/img.rostro-panuelo.jpg"
 precio: "30"
-tipo: Desarrollo personal
+tipo: Mejorar la sociedad
 ambito: Familia
 category: futuros
 tags: "Jordi Cussó Porredón,Enrique Baca Baldomero,Fancesc Torralba,Jorge Úbeda"
