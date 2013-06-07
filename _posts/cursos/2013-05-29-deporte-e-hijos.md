@@ -16,6 +16,7 @@ tags:
   - Jordi Cussó Porredón
   - Enrique Baca Baldomero
   - Fancesc Torralba
+  - Jorge Úbeda
 colaboran: null
 ---
 
