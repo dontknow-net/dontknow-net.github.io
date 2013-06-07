@@ -70,7 +70,7 @@ prose:
           selected: "futuros"
       - name: "tags"
         field:
-          element: "text"
+          element: "multiselect"
           label: "Profesores"
           value:
             - "Nombre del tutor (como el campo title del profesor)"
