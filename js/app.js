@@ -64,7 +64,7 @@
     _gaq.push(['_trackEvent', 'saber-mas', 'footer']);
   });
 
-  $('a.dontknow').once().click(function(e) {
+  $('a.dontknow').click(function(e) {
     console.log("pinchado" + $(this).attr("href"));
     _gaq.push(['_link', $(this).attr("href")]);
   });
