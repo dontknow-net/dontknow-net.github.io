@@ -64,4 +64,8 @@
     _gaq.push(['_trackEvent', 'saber-mas', 'footer']);
   });
 
+  $('a.dontknow').click(function(e) {
+    _gaq.push(['_link', $(this).attr("href")]);
+  });
+
 })(jQuery);
